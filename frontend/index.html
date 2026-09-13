@@ -3570,7 +3570,7 @@ body,
   line-height: 1.45;
 }
 
-
+    
 /* ==========================================================================
    Executive presentation pass · light, board-ready, consultant aesthetic
    ========================================================================== */
@@ -3872,7 +3872,7 @@ body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSyst
 .ws-controls, .ws-rail, .inspector, .record, .scenario-rail, .metric-ledger,
 .summary-grid, .conclusion, .packet-main, .packet-aside, .decision-card,
 .kpi-card, .dashboard-card, .chart-card, .evidence-card, .readout,
-.loop-step, .risk-row, .brand-card, .value-card {
+.loop-step, .risk-row, .brand-card, .value-card { 
   background:#FFFFFF !important;
   border-color:var(--rule) !important;
   color:var(--ink) !important;
@@ -3958,7 +3958,7 @@ svg path[fill="none"] { stroke:#D04A02 !important; }
 }
 
 </style>
-
+  
 <style id="readability-patch">
 /* ========================================================================
    STYLEVERSE · GLOBAL READABILITY PASS
@@ -6741,7 +6741,6 @@ function renderReviewPage() {
   <section class="page-section">
     <div class="section-head"><div><h3>1 · Prioritised decision queue</h3><p>Select a recommendation to open the evidence panel. Start with the highest value, then resolve exceptions.</p></div><span class="count-note">${QUEUE_TOTAL} open</span></div>
     <div class="viz-legend review-legend"><span><i class="action-mark red"></i>Critical / immediate</span><span><i class="action-mark amber"></i>Commercial opportunity</span><span><i class="action-mark blue"></i>Network move</span><span><i class="action-mark graphite"></i>Escalation / constraint</span></div>
-    ${renderModelRecs()}
     ${renderActionDocket(20, true)}
   </section>
   <section class="page-section review-evidence">
@@ -8889,6 +8888,137 @@ svg text[font-weight="700"] { font-weight: 700; }
 .pager-btn:hover { border-color: #1A1A1A; color: #1A1A1A; }
 .pager-btn.primary { background: #D04A02; border-color: #D04A02; color: #FFFFFF; }
 .pager-btn.primary:hover { background: #9C3600; border-color: #9C3600; color: #FFFFFF; }
+
+/* ── RESPONSIVE LAYOUT ─────────────────────────────────────────────
+   Covers mobile (≤640px), tablet (641–1024px), desktop (1025px+)
+   Priority: no horizontal scroll, readable text, usable navigation
+──────────────────────────────────────────────────────────────────── */
+
+/* Base: prevent horizontal overflow on all screens */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; max-width: 100vw; }
+img, svg, canvas { max-width: 100%; height: auto; }
+
+/* ── Tablet (641px – 1024px) ── */
+@media (max-width: 1024px) {
+  /* shrink sidebar */
+  .rail, .sidebar, .left-rail, .scenario-rail, [class*="sidebar"] {
+    width: 220px !important;
+    min-width: 220px !important;
+    flex: 0 0 220px !important;
+    font-size: 12px !important;
+  }
+  /* reduce main padding */
+  .main, .page-main, .content, [class*="main-content"] {
+    padding: 0 14px 32px !important;
+  }
+  /* metric cards: 2 per row */
+  .led, .kpi-card, .metric-card, [class*="kpi-"] {
+    min-width: 120px !important;
+  }
+  /* grid cells smaller */
+  .cell, .state-cell {
+    height: 28px !important;
+    font-size: 11px !important;
+  }
+  /* panels stack */
+  .panel-grid, .two-col, [class*="grid-2"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Mobile (≤640px) ── */
+@media (max-width: 640px) {
+  /* hide sidebar, show as top nav */
+  .rail, .sidebar, .left-rail, .scenario-rail {
+    display: none !important;
+  }
+  /* full width content */
+  .shell, .layout, [class*="shell"], [class*="layout"] {
+    flex-direction: column !important;
+  }
+  .main, .page-main, .content {
+    width: 100% !important;
+    padding: 0 10px 24px !important;
+  }
+  /* masthead: stack vertically */
+  .mast, .masthead, [class*="header-"] {
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 12px !important;
+  }
+  .ledger, [class*="ledger"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px !important;
+    width: 100% !important;
+  }
+  .led, [class*="led-"] {
+    min-width: unset !important;
+    padding: 8px 10px !important;
+  }
+  .led b { font-size: 15px !important; }
+  /* nav tabs: scrollable */
+  .nav, .tab-bar, [class*="tab-nav"] {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important;
+  }
+  .nav button, [class*="tab-btn"] {
+    padding: 10px 10px 8px !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+  /* state grid: scrollable horizontally */
+  .grid-wrap, [class*="grid-table"], table {
+    overflow-x: auto !important;
+    display: block !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .cell, .state-cell {
+    height: 26px !important;
+    font-size: 10px !important;
+    min-width: 32px !important;
+  }
+  /* decision queue: full width */
+  .queue-row, .action-row, [class*="docket-row"] {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  /* hide secondary columns on mobile */
+  .hide-mobile { display: none !important; }
+  /* typography */
+  h1 { font-size: 16px !important; }
+  h2 { font-size: 14px !important; }
+  h3 { font-size: 13px !important; }
+  .kpi-value, [class*="impact-value"], .figure b {
+    font-size: 18px !important;
+  }
+  /* inspector panel: full width */
+  .inspector, [class*="inspector"] {
+    width: 100% !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+  }
+  /* demand chart: scrollable */
+  .chart-wrap, [class*="chart"] svg {
+    overflow-x: auto !important;
+    display: block !important;
+  }
+  /* model recs dropdown */
+  .model-recs-toggle { font-size: 12px !important; padding: 9px 12px !important; }
+  .model-rec-row { flex-direction: column !important; gap: 5px !important; }
+}
+
+/* ── Large desktop (≥1400px) ── */
+@media (min-width: 1400px) {
+  .rail, .sidebar, .left-rail, .scenario-rail {
+    width: 320px !important;
+    flex: 0 0 320px !important;
+  }
+}
 
 </style>
 </body>
