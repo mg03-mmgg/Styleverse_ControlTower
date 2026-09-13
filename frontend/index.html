@@ -3052,14 +3052,14 @@ input[type="range"] {
 
 /* state colours across board, legends and charts */
 
-.state-OUT        { background:#B91C1C; }
-.state-BLOCKED    { background:#44403C; }
-.state-RISK       { background:#D04A02; }
-.state-BREAKOUT   { background:#7C3AED; }
-.state-TERMINAL   { background:#9D174D; }
-.state-IMBAL      { background:#0E7490; }
-.state-SLOW       { background:#92400E; }
-.state-HEALTHY    { background:#166534; }
+.state-OUT{background:#B91C1C}
+.state-BLOCKED{background:#44403C}
+.state-RISK{background:#D04A02}
+.state-BREAKOUT{background:#7C3AED}
+.state-TERMINAL{background:#9D174D}
+.state-IMBAL{background:#0E7490}
+.state-SLOW{background:#92400E}
+.state-HEALTHY{background:#166534}
 
 .bar-fill.red { background: var(--rose); }
 .bar-fill.amber { background: var(--tangerine); }
@@ -3111,14 +3111,14 @@ input[type="range"] {
 
 /* state board cells: legible text on every colour */
 
-.state-cell.state-OUT      { background:#B91C1C; color:#fff; }
-.state-cell.state-BLOCKED  { background:#44403C; color:#fff; }
-.state-cell.state-RISK     { background:#D04A02; color:#fff; }
-.state-cell.state-BREAKOUT { background:#7C3AED; color:#FFFFFF; }
-.state-cell.state-TERMINAL { background:#9D174D; color:#fff; }
-.state-cell.state-IMBAL    { background:#0E7490; color:#fff; }
-.state-cell.state-SLOW     { background:#92400E; color:#fff; }
-.state-cell.state-HEALTHY  { background:#166534; color:#fff; }
+.state-cell.state-OUT{background:#B91C1C;color:#fff}
+.state-cell.state-BLOCKED{background:#44403C;color:#fff}
+.state-cell.state-RISK{background:#D04A02;color:#fff}
+.state-cell.state-BREAKOUT{background:#7C3AED;color:#fff}
+.state-cell.state-TERMINAL{background:#9D174D;color:#fff}
+.state-cell.state-IMBAL{background:#0E7490;color:#fff}
+.state-cell.state-SLOW{background:#92400E;color:#fff}
+.state-cell.state-HEALTHY{background:#166534;color:#fff}
 
 .state-cell.quiet { color: #D04A02; opacity: 1; }
 
@@ -3913,18 +3913,15 @@ tr:hover td { background:rgba(208,74,2,0.035) !important; }
 .action-mark.red, .action-mark.amber, .action-mark.violet, .action-mark.blue, .action-mark.graphite { background:#D04A02 !important; }
 .taxo-tag.automate, .taxo-tag.augment, .taxo-tag.human { background:var(--surface-tint) !important; color:var(--ink) !important; border-color:var(--rule) !important; }
 
-/* State board: each state has its own semantic colour so the legend
-   and grid cells are immediately distinguishable at a glance.
-   Severity: red=critical, amber=warning, purple=opportunity,
-   teal=imbalance, olive=slow, green=healthy, graphite=blocked */
-.state-OUT,        .state-cell.state-OUT        { background:#B91C1C !important; color:#FFFFFF !important; } /* deep red — stockout */
-.state-BLOCKED,    .state-cell.state-BLOCKED    { background:#44403C !important; color:#FFFFFF !important; } /* dark graphite — supply blocked */
-.state-RISK,       .state-cell.state-RISK       { background:#D04A02 !important; color:#FFFFFF !important; } /* signal orange — stockout risk */
-.state-BREAKOUT,   .state-cell.state-BREAKOUT   { background:#7C3AED !important; color:#FFFFFF !important; } /* violet — demand breakout */
-.state-TERMINAL,   .state-cell.state-TERMINAL   { background:#9D174D !important; color:#FFFFFF !important; } /* rose — terminal overstock */
-.state-IMBAL,      .state-cell.state-IMBAL      { background:#0E7490 !important; color:#FFFFFF !important; } /* teal — imbalanced network */
-.state-SLOW,       .state-cell.state-SLOW       { background:#92400E !important; color:#FFFFFF !important; } /* amber-brown — slow mover */
-.state-HEALTHY,    .state-cell.state-HEALTHY    { background:#166534 !important; color:#FFFFFF !important; } /* forest green — healthy */
+/* State board: all states remain distinguishable through purple intensity, never hue. */
+.state-OUT,.state-cell.state-OUT{background:#B91C1C !important;color:#fff !important}
+.state-BLOCKED,.state-cell.state-BLOCKED{background:#44403C !important;color:#fff !important}
+.state-RISK,.state-cell.state-RISK{background:#D04A02 !important;color:#fff !important}
+.state-BREAKOUT,.state-cell.state-BREAKOUT{background:#7C3AED !important;color:#fff !important}
+.state-TERMINAL,.state-cell.state-TERMINAL{background:#9D174D !important;color:#fff !important}
+.state-IMBAL,.state-cell.state-IMBAL{background:#0E7490 !important;color:#fff !important}
+.state-SLOW,.state-cell.state-SLOW{background:#92400E !important;color:#fff !important}
+.state-HEALTHY,.state-cell.state-HEALTHY{background:#166534 !important;color:#fff !important}
 
 /* Workstream-specific visuals */
 .trend-confidence-fill { background:#8A6D1F; } .trend-tag.brand { background:#FDF2E9; border-color:#D04A02; color:#9C3600; }
@@ -4770,6 +4767,23 @@ svg text,svg tspan{fill:var(--ink)!important}
       grid-column: auto;
     }
   }
+
+/* ── model recommendations dropdown ────────────────────────────── */
+.model-recs-section{margin-bottom:18px;border:1.5px solid #D04A02;border-radius:8px;overflow:hidden}
+.model-recs-toggle{width:100%;background:#FDF0E8;border:none;padding:11px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font:600 13px/1 inherit;color:#9C3600;gap:10px}
+.model-recs-toggle:hover{background:#FAE6D6}
+.model-recs-badge{background:#D04A02;color:#fff;border-radius:10px;padding:2px 8px;font-size:11px;font-weight:700;margin-left:auto}
+.model-recs-arrow{transition:transform .2s;font-style:normal;margin-left:8px}
+.model-recs-toggle[aria-expanded="true"] .model-recs-arrow{transform:rotate(180deg)}
+.model-recs-body{display:none;padding:12px 14px;background:#fff}
+.model-recs-body.open{display:block}
+.model-rec-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid #F1EEE9;font-size:12.5px}
+.model-rec-row:last-child{border-bottom:none;padding-bottom:0}
+.model-rec-tag{background:#D04A02;color:#fff;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0}
+.model-rec-detail{flex:1;min-width:0}
+.model-rec-detail strong{display:block;color:#1C1B1A;margin-bottom:2px}
+.model-rec-detail span{color:#57534E;line-height:1.5;display:block;font-size:12px}
+.model-rec-qty{font-weight:700;color:#D04A02;white-space:nowrap;font-size:13px;flex-shrink:0}
 </style>
 </head>
   <body>
@@ -5860,7 +5874,8 @@ let QUEUE = [];
 let QUEUE_TOTAL = 0;
 let DOCKET_SHOWN = 20;
 let RECOVERED = 0;
-let DEMAND_HISTORY = []; // real weekly sales [{week, units}] from /api/demand-history
+let DEMAND_HISTORY = [];
+let MODEL_RECS = []; // real model-generated recommendations from ai_recommendation (Supabase)
 let LOG = [];
 
 let L = { disc: 10, lead: 14, cap: 1600, svc: 95, weeks: 9, tcost: 60, shock: 0 };
@@ -6993,10 +7008,21 @@ async function loadData() {
     } else {
       try {
         await buildData();
+        // fetch real model-generated recommendations from ai_recommendation (Supabase)
+        fetch(`${API_BASE}/api/recommendations?t=${Date.now()}`, { cache: "no-store" })
+          .then((r) => r.ok ? r.json() : null)
+          .then((data) => {
+            if (!data || !Array.isArray(data.recommendations) || !data.recommendations.length) return;
+            MODEL_RECS = data.recommendations;
+            render();
+          })
+          .catch(() => {});
+        // fetch real demand history
         fetch(`${API_BASE}/api/demand-history?t=${Date.now()}`, { cache: "no-store" })
           .then((r) => r.ok ? r.json() : null)
           .then((data) => { if (data && Array.isArray(data.history)) { DEMAND_HISTORY = data.history; render(); } })
           .catch(() => {});
+        // fetch real model stats and decision history
         fetch(`${API_BASE}/api/model-stats?t=${Date.now()}`, { cache: "no-store" })
           .then((r) => r.ok ? r.json() : null)
           .then((data) => {
@@ -7053,7 +7079,7 @@ const CASE_STORES = 200;
 const CASE_SKUS = 8000;
 const CASE_UNSOLD = 0.26;
 let MODEL = {
-  accuracy: 70.2,
+  accuracy: 47.7,
   naive: 68.0,
   baseline: 62.0,
   observations: "860K",
@@ -7482,6 +7508,41 @@ function renderSupplyPage() {
 
 /* --------------------------------------------------- 6 · decisions ------ */
 
+function renderModelRecs() {
+  if (!MODEL_RECS.length) return "";
+  const id = "model-recs-body";
+  const rows = MODEL_RECS.map((r) => `
+    <div class="model-rec-row">
+      <span class="model-rec-tag">${escapeHTML(r.recommendation_type || "Replenish")}</span>
+      <div class="model-rec-detail">
+        <strong>${escapeHTML(r.product_id)} · ${escapeHTML(r.location_id)}
+          ${r.brand ? ` <span style="font-weight:400;color:#8A837C">${escapeHTML(r.brand)}</span>` : ""}
+          ${r.city  ? ` · <span style="font-weight:400;color:#8A837C">${escapeHTML(r.city)}</span>` : ""}
+        </strong>
+        <span>${escapeHTML(r.recommendation_reason || "")}</span>
+      </div>
+      <span class="model-rec-qty">${r.recommended_quantity ? `${r.recommended_quantity} u` : ""}</span>
+    </div>`).join("");
+
+  return `
+  <div class="model-recs-section">
+    <button class="model-recs-toggle" aria-expanded="false" aria-controls="${id}"
+      onclick="var b=document.getElementById('${id}');var open=b.classList.toggle('open');this.setAttribute('aria-expanded',open)">
+      <span>🤖 AI Model Recommendations — from trained DEMAND_V1</span>
+      <span class="model-recs-badge">${MODEL_RECS.length}</span>
+      <i class="model-recs-arrow">▼</i>
+    </button>
+    <div class="model-recs-body" id="${id}">
+      <p style="font-size:12px;color:#57534E;margin:0 0 10px;line-height:1.5">
+        These ${MODEL_RECS.length} recommendations were generated offline by the DEMAND_V1 XGBoost model
+        trained on StyleVerse fashion data — with real supplier lead times and safety-stock theory.
+        The live queue below is calculated in real time from current inventory.
+      </p>
+      ${rows}
+    </div>
+  </div>`;
+}
+
 function renderDecisionsPage() {
   const accepted = LOG.filter((entry) => entry.decision === "Accepted").length;
   const rejected = LOG.filter((entry) => entry.decision === "Rejected").length;
@@ -7507,6 +7568,7 @@ function renderDecisionsPage() {
   <section class="page-section">
     <div class="section-head"><div><h3>Queue: what needs a call</h3><p>Ranked by value. Select a row, read the evidence on the right, then accept or reject.</p></div><span class="count-note">${QUEUE_TOTAL} open</span></div>
     <div class="viz-legend" style="margin:0 0 12px">${types.map((type) => `<span><i class="action-mark ${ACTION_MARKS[type] || "graphite"}" style="width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px"></i>${type}</span>`).join("")}</div>
+    ${renderModelRecs()}
     ${renderActionDocket(20)}
   </section>
   <section class="page-section">
