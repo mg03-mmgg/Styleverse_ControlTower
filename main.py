@@ -470,6 +470,8 @@ def model_stats():
     }
 
 
+@app.get("/api/recommendations")
+def recommendations(status: str = "Pending", limit: int = 50):
     with engine.connect() as conn:
         rows = conn.execute(text("""
             SELECT r.recommendation_id, r.product_id, p.brand, p.category,
