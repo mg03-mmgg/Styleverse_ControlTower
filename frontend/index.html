@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FFFFFF" />
-    <meta name="description" content="StyleVerse Workstream 1: Trend-to-Design Accelerator and retail decision control tower" />
-    <title>StyleVerse | Trend-to-Design Accelerator</title>
+    <meta name="description" content="StyleVerse Workstream 1: Trend to Design Accelerator and retail decision control tower" />
+    <title>StyleVerse | Trend to Design Accelerator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600;650;700&amp;display=swap" rel="stylesheet" />
@@ -1423,7 +1423,7 @@ tbody tr:last-child td {
   font-weight: 600;
 }
 
-.store-cluster {
+.store cluster {
   display: block;
   margin-top: 2px;
   color: var(--quiet);
@@ -1814,7 +1814,7 @@ tbody tr:last-child td {
    2. Workstream 1 components (merged from the design module stylesheet)
    ========================================================================== */
 /* ==========================================================================
-   Workstream 1 · Trend-to-Design Accelerator
+   Workstream 1 · Trend to Design Accelerator
    Additional components layered on the control tower design language.
    ========================================================================== */
 
@@ -3692,7 +3692,7 @@ body { color: var(--ink); font-size: 13px; }
 
 
 /* ==========================================================================
-   Executive dashboard visual layer — boardroom / consulting dashboard mode
+   Executive dashboard visual layer boardroom / consulting dashboard mode
    ========================================================================== */
 :root{
   --dash-bg:#FFFFFF;
@@ -3867,7 +3867,7 @@ body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSyst
 .page-title, .page-section-title, h1,h2,h3,h4,h5,h6,strong, th { color:var(--ink) !important; }
 .avatar { background:#D04A02 !important; color:#FFFFFF !important; }
 
-/* Cards and panels — clean white dashboard surfaces */
+/* Cards and panels clean white dashboard surfaces */
 .page-section, .viz-card, .rule-panel, .brief-sheet, .trend-card, .wave-card,
 .ws-controls, .ws-rail, .inspector, .record, .scenario-rail, .metric-ledger,
 .summary-grid, .conclusion, .packet-main, .packet-aside, .decision-card,
@@ -3906,10 +3906,10 @@ tr:hover td { background:rgba(208,74,2,0.035) !important; }
 
 /* Charts and legends: purple only, with opacity used for differentiation */
 .viz-legend, .legend, .chart-legend, .viz-caption { color:var(--muted) !important; }
-.viz-legend i, .legend i, .chart-key { background:#D04A02 !important; border-color:#D04A02 !important; }
+/* removed: this forced every legend swatch to a single colour */
 .chart-key.forecast { border-top-color:rgba(208,74,2,0.58) !important; }
-.bar-fill, .alloc-fill, .stage-bar-fill, .stage-bar-fill.after, .brand-dial i.on { background:#D04A02 !important; }
-.bar-fill.red, .bar-fill.amber, .bar-fill.green, .bar-fill.blue, .bar-fill.graphite { background:#D04A02 !important; }
+/* removed: forced every bar to one colour and overrode per-series colours */
+/* removed: collapsed the semantic bar tones into a single colour */
 .action-mark.red, .action-mark.amber, .action-mark.violet, .action-mark.blue, .action-mark.graphite { background:#D04A02 !important; }
 .taxo-tag.automate, .taxo-tag.augment, .taxo-tag.human { background:var(--surface-tint) !important; color:var(--ink) !important; border-color:var(--rule) !important; }
 
@@ -3928,7 +3928,7 @@ tr:hover td { background:rgba(208,74,2,0.035) !important; }
 .state-HEALTHY, .state-cell.state-HEALTHY { opacity:.32; color:var(--ink) !important; }
 
 /* Workstream-specific visuals */
-.trend-confidence-fill, .trend-tag.brand { background:#D04A02 !important; border-color:#D04A02 !important; color:#D04A02 !important; }
+.trend-confidence-fill { background:#8A6D1F; } .trend-tag.brand { background:#FDF2E9; border-color:#D04A02; color:#9C3600; }
 .trend-tag { background:var(--surface-tint) !important; border-color:var(--rule) !important; color:var(--ink) !important; }
 .human-gate { border-left:3px solid #D04A02 !important; }
 .provenance-ribbon, .provenance-step { border-color:var(--rule) !important; }
@@ -4301,7 +4301,7 @@ svg [fill="#FFFFFF"],svg [fill="#fff"],svg [fill="white"]{fill:#FFFFFF!important
 /* ensure no legacy colored status styles survive */
 .state-OUT,.state-BLOCKED,.state-RISK,.state-BREAKOUT,.state-TERMINAL,.state-IMBAL,.state-SLOW,.state-HEALTHY,
 .action-mark,.bar-fill,.bar-fill.red,.bar-fill.amber,.bar-fill.green,.bar-fill.blue,.bar-fill.graphite,
-.brand-dial i.on,.alloc-fill,.stage-bar-fill,.stage-bar-fill.after,.stage-bar-fill.floor{background:var(--primary-purple)!important;color:#fff}
+.brand-dial i.on,.alloc-fill{background:#D04A02;color:#fff}.stage-bar-fill{background:#BDB5A9}.stage-bar-fill.after{background:#D04A02}.stage-bar-fill.floor{background:#2D2A26}
 
 /* readable microcopy */
 .legend,.viz-legend,.chart-note,.notice-copy,.notice-action,.count-note,.mono-pill,.k-meta,.card-sub,.page-subtitle{color:var(--muted)!important}
@@ -4384,14 +4384,14 @@ body{background:var(--white)!important;color:var(--purple)!important;font-size:1
 .inspector-kicker,.inspector-status,.impact-value{color:var(--purple)!important}.inspector-store,.rationale-sub,.evidence-row{color:var(--purple-2)!important}.docket-row.selected{background:var(--purple-6)!important;box-shadow:inset 3px 0 0 var(--purple)!important}
 .action-mark{background:var(--purple)!important}.action-name{color:var(--purple)!important}
 /* Cycle / flow visuals */
-.stage-row,.loop-step{background:#fff!important}.loop-step{border:1px solid var(--purple-4)!important;border-radius:9px!important;box-shadow:none!important}.loop-step .loop-index{color:var(--purple)!important}.stage-bar-fill,.stage-bar-fill.after,.stage-bar-fill.floor,.ws-gate-fill,.ws-gate-fill.pass{background:var(--purple)!important}
+.stage-row,.loop-step{background:#fff!important}.loop-step{border:1px solid var(--purple-4)!important;border-radius:9px!important;box-shadow:none!important}.loop-step .loop-index{color:var(--purple)!important}
 .ws-gate{padding:18px!important}.ws-gate-track{background:var(--purple-6)!important}.ws-gate-mark{background:var(--purple)!important}
 /* All labels, SVG annotations and chart geometry use purple; white remains the only surface. */
 svg text,svg tspan{fill:var(--purple)!important}.viz-card svg,.chart-frame svg{background:#fff!important}
 /* removed: blanket svg stroke override */
 svg [fill="#FFFFFF"],svg [fill="#fff"],svg [fill="white"]{fill:#fff!important}
 /* Remove any visual hint of legacy status colours. */
-.state-OUT,.state-BLOCKED,.state-RISK,.state-BREAKOUT,.state-TERMINAL,.state-IMBAL,.state-SLOW,.state-HEALTHY,.bar-fill,.bar-fill.red,.bar-fill.amber,.bar-fill.green,.bar-fill.blue,.bar-fill.graphite,.action-mark{background:var(--purple)!important;color:#fff!important}
+
 /* Readability floor */
 small,.small,.count-note,.mono-pill{font-size:10.5px!important;color:var(--purple-2)!important}
 @media(max-width:760px){.content{padding:20px 16px 44px!important}.page-title{font-size:24px!important}.ws-headline,.metric-ledger{grid-template-columns:1fr!important}.page-grid-2,.page-grid-3{grid-template-columns:1fr!important}}
@@ -4522,14 +4522,14 @@ svg text,svg tspan{fill:var(--ink)!important}
 .viz-caption strong{color:var(--ink)!important}
 
 /* Violet-first chart fills */
-.bar-fill,.bar-fill.red,.bar-fill.amber,.bar-fill.green,.bar-fill.blue,.bar-fill.graphite{background:linear-gradient(90deg,#5B4ED8,#8175EF)!important}
-.stage-bar-fill.after,.stage-bar-fill{background:#6F62E7!important}.stage-bar-fill.floor{background:#C8C7D6!important}
-.alloc-fill{background:linear-gradient(90deg,#5B4ED8,#8277F0)!important}
+
+/* removed: stage bars now take their colour from the series */
+.alloc-fill{background:#D04A02}
 .brand-dial i.on{background:var(--primary-purple)!important}
 .trend-momentum{color:var(--purple-deep)!important}
 .trend-tag.brand{border-color:#CEC9FF!important;background:var(--purple-soft)!important;color:var(--purple-deep)!important}
 
-/* Delicate semantic statuses — reserved for meaning, never used as the main theme. */
+/* Delicate semantic statuses reserved for meaning, never used as the main theme. */
 .action-mark.red{background:#C85A68!important}.action-mark.amber{background:#B4862F!important}.action-mark.blue{background:#6B78D8!important}.action-mark.violet{background:#6658E8!important}.action-mark.graphite{background:#77758A!important}
 .human-gate{background:#F8F7FE!important;color:var(--purple-deep)!important;border-color:#DED9FF!important}
 .state-cell.state-OUT{background:#C85A68!important;color:#fff!important}.state-cell.state-BLOCKED{background:#4E43C9!important;color:#fff!important}.state-cell.state-RISK{background:#786CE8!important;color:#fff!important}.state-cell.state-BREAKOUT{background:#6658E8!important;color:#fff!important}.state-cell.state-TERMINAL{background:#8B7FF0!important;color:#fff!important}.state-cell.state-IMBAL{background:#AAA4F3!important;color:#28273A!important}.state-cell.state-SLOW{background:#E5E3F5!important;color:#4E43C9!important}.state-cell.state-HEALTHY{background:#F0EFF8!important;color:#5F5D72!important}
@@ -4778,9 +4778,9 @@ svg text,svg tspan{fill:var(--ink)!important}
     <script>
 /* ==========================================================================
    StyleVerse | PwC Challenge 8th Edition, Round 2, Workstream 1
-   Single self-contained prototype. No build step, no local server required.
+   Single self contained prototype. No build step, no local server required.
 
-   Section 1 · Trend-to-Design Accelerator (Design & Product Development)
+   Section 1 · Trend to Design Accelerator (Design & Product Development)
    Section 2 · Retail decision control tower (downstream impact)
 
    The retail section calls http://localhost:8000 when that service is
@@ -4790,7 +4790,7 @@ svg text,svg tspan{fill:var(--ink)!important}
 
 /* ===== Section 1 ======================================================== */
 /* ==========================================================================
- * Workstream 1 · Trend-to-Design Accelerator
+ * Workstream 1 · Trend to Design Accelerator
  * Design & Product Development capability layered onto the control tower.
  * Every figure below is derived from the case exhibits or from a stated
  * assumption; assumption strings are rendered on the page that uses them.
@@ -4827,7 +4827,7 @@ const WS_BRANDS = [
 const WS_STAGES = [
   { id: "trend", name: "Trend research", detail: "Reports, runway, social, competitor, reviews, sales", base: 3, maxCut: 0.82, floor: 0.4, driver: "signal", change: "Replaced. Continuous ingestion replaces the manual sweep; designers open a ranked, sourced brief instead of building one." },
   { id: "concept", name: "Concept development", detail: "Mood boards, sketches, colour, fabric exploration", base: 2, maxCut: 0.45, floor: 0.9, driver: "autonomy", change: "Shortened. Boards and colourways are pre-assembled from the brief; ideation and selection stay with the designer." },
-  { id: "review", name: "Cross-functional reviews", detail: "Design, Merchandising, Marketing, Commercial approvals", base: 3, maxCut: 0.78, floor: 0.5, driver: "review", change: "Replaced. One shared concept room with auto-consolidated feedback and threshold-based approvals replaces the meeting chain." },
+  { id: "review", name: "Cross functional reviews", detail: "Design, Merchandising, Marketing, Commercial approvals", base: 3, maxCut: 0.78, floor: 0.5, driver: "review", change: "Replaced. One shared concept room with auto-consolidated feedback and threshold-based approvals replaces the meeting chain." },
   { id: "refine", name: "Product refinement", detail: "Final updates, documentation, collection planning", base: 2, maxCut: 0.72, floor: 0.4, driver: "autonomy", change: "Removed in part. Tech packs, spec sheets and version history are generated from the approved concept record." },
   { id: "production", name: "Production readiness", detail: "Final approvals and handover to manufacturing", base: 4, maxCut: 0.28, floor: 3.0, driver: "autonomy", change: "Constrained. Fabric commitments and supplier capacity hold this at three weeks; only the approval handover compresses." }
 ];
@@ -4837,7 +4837,7 @@ const WS_ACTIVITIES = [
   { id: "competitor", name: "Competitor analysis & benchmarking", share: 0.10, cut: 0.82, driver: "signal", disp: "automate" },
   { id: "insight", name: "Customer insight review", share: 0.08, cut: 0.55, driver: "signal", disp: "augment" },
   { id: "docs", name: "Documentation & presentation prep", share: 0.12, cut: 0.75, driver: "autonomy", disp: "automate" },
-  { id: "meetings", name: "Cross-functional meetings & approvals", share: 0.15, cut: 0.48, driver: "review", disp: "augment" }
+  { id: "meetings", name: "Cross functional meetings & approvals", share: 0.15, cut: 0.48, driver: "review", disp: "augment" }
 ];
 
 const WS_REVIEW_MODES = [
@@ -4859,7 +4859,7 @@ const WS_SIGNALS = [
   { id: "search", label: "Search & site queries", weight: 0.18 },
   { id: "ecom", label: "Competitor e-commerce", weight: 0.16 },
   { id: "reviews", label: "Reviews & returns", weight: 0.12 },
-  { id: "sales", label: "Historical sell-through", weight: 0.18 }
+  { id: "sales", label: "Historical sell through", weight: 0.18 }
 ];
 
 const WS_TRENDS = [
@@ -4877,19 +4877,19 @@ const WS_TASKS = [
   { task: "Building the mood board and colour story", disp: "augment", now: "7.8 hrs", after: "3.2 hrs on curation and edit", why: "First pass generated from the brief; taste and edit remain human." },
   { task: "Fabric and trim shortlisting", disp: "augment", now: "3.6 hrs", after: "1.9 hrs", why: "Library search is automated; hand feel and quality call are not." },
   { task: "Preparing review decks and specification documents", disp: "automate", now: "4.9 hrs", after: "0.6 hrs on final check", why: "Generated from the approved concept record, not retyped." },
-  { task: "Consolidating cross-functional feedback", disp: "automate", now: "2.7 hrs", after: "Auto-consolidated with conflict flags", why: "Structured comment capture removes manual reconciliation." },
+  { task: "Consolidating cross functional feedback", disp: "automate", now: "2.7 hrs", after: "Auto-consolidated with conflict flags", why: "Structured comment capture removes manual reconciliation." },
   { task: "Deciding the seasonal creative direction", disp: "human", now: "Designer led", after: "Designer led, better evidenced", why: "Brand meaning and creative risk are not delegable." },
   { task: "Approving a concept for commercialisation", disp: "human", now: "Design director", after: "Design director, with signed provenance record", why: "Authorship and IP evidence require a named human decision." },
   { task: "Brand storytelling and campaign narrative", disp: "human", now: "Design + Marketing", after: "Unchanged", why: "Voice of the house; explicitly out of scope for automation." }
 ];
 
 const WS_LOOP = [
-  { step: "01", name: "Signal", owner: "Agent", copy: "Sources are ingested continuously and de-duplicated against the last run." },
+  { step: "01", name: "Signal", owner: "Agent", copy: "Sources are ingested continuously and deduplicated against the last run." },
   { step: "02", name: "Brief", owner: "Agent · designer approves", copy: "A ranked, sourced trend brief is drafted for the brand and season in scope." },
   { step: "03", name: "Curate", owner: "Designer", copy: "The designer accepts, edits or rejects each theme and records a reason code." },
   { step: "04", name: "Create", owner: "Designer", copy: "Concept work happens in the designer's own tools; the copilot fills documentation." },
-  { step: "05", name: "Decide", owner: "Cross-functional", copy: "One concept room; feedback consolidated, exceptions escalated, decision timestamped." },
-  { step: "06", name: "Learn", owner: "Model + CoE", copy: "Override reasons and sell-through outcomes retrain ranking every fortnight." }
+  { step: "05", name: "Decide", owner: "Cross functional", copy: "One concept room; feedback consolidated, exceptions escalated, decision timestamped." },
+  { step: "06", name: "Learn", owner: "Model + CoE", copy: "Override reasons and sell through outcomes retrain ranking every fortnight." }
 ];
 
 const WS_RISKS = [
@@ -4898,7 +4898,7 @@ const WS_RISKS = [
   { name: "Trend hallucination", control: "Every claim in a brief carries a source link and a confidence band. Briefs below 0.60 confidence are marked unusable for commitment." },
   { name: "Adoption resistance", control: "Designer override is always available and always logged. Adoption is measured on curation quality, never on acceptance rate." },
   { name: "Third-party content leakage", control: "Ingestion limited to licensed feeds and public data; no supplier or partner artwork enters training or retrieval." },
-  { name: "Regulatory classification shift", control: "Annual EU AI Act re-assessment; the design copilot is documented as limited risk with transparency obligations met by the provenance record." }
+  { name: "Regulatory classification shift", control: "Annual EU AI Act reassessment; the design copilot is documented as limited risk with transparency obligations met by the provenance record." }
 ];
 
 const WS_KPIS = [
@@ -4908,7 +4908,7 @@ const WS_KPIS = [
   { kpi: "Concept approval time", base: "3 weeks", target: "4 working days", how: "Concept room decision log", when: "Month 9" },
   { kpi: "Design iteration cycles per concept", base: "3.4", target: "1.8", how: "Version count on the concept record", when: "Month 9" },
   { kpi: "Trend relevance at launch", base: "67%", target: "88%", how: "Share of launched concepts still in a rising trend window", when: "Month 12" },
-  { kpi: "First 8-week sell-through", base: "62%", target: "71%", how: "POS, measured against a matched control assortment", when: "Month 18" },
+  { kpi: "First 8 week sell through", base: "62%", target: "71%", how: "POS, measured against a matched control assortment", when: "Month 18" },
   { kpi: "Copilot weekly active designers", base: "0%", target: "85%", how: "Platform telemetry, excludes token logins", when: "Month 9" },
   { kpi: "Design function attrition", base: "18% (Exhibit 3)", target: "12%", how: "HR reporting, twelve-month rolling", when: "Month 18" },
   { kpi: "Structured learning hours a year", base: "12 hrs", target: "60 hrs", how: "Learning platform records", when: "Month 12" },
@@ -4944,7 +4944,7 @@ const WS_BUDGET = [
   { name: "Signal spine and data licensing", note: "Trend feeds, social listening, ingestion, DAM and PLM integration", value: 8.5 },
   { name: "Copilot and model build", note: "Trend ranking, brief generation, concept room, evaluation harness", value: 7.0 },
   { name: "Workflow integration", note: "PLM, DAM, tech pack automation, identity and access", value: 5.5 },
-  { name: "Design academy and reskilling", note: "1,500 people, 12-week programme, four new role tracks", value: 6.0 },
+  { name: "Design academy and reskilling", note: "1,500 people, 12 week programme, four new role tracks", value: 6.0 },
   { name: "Governance, IP and provenance", note: "Provenance ledger, legal opinion across three jurisdictions, model register", value: 4.0 },
   { name: "Change, pilot operations and contingency", note: "Adoption support, champions network, 10% contingency", value: 3.0 }
 ];
@@ -5093,7 +5093,7 @@ function wsControls(options = {}) {
   return `<section class="ws-controls" id="wsControls">
     <div class="ws-controls-head">
       <div><h4>Configure the capability</h4><p>Every panel below recalculates from these settings.</p></div>
-      <span class="mono-pill">Workstream 1 · Trend-to-Design Accelerator</span>
+      <span class="mono-pill">Workstream 1 · Trend to Design Accelerator</span>
     </div>
     <div class="ws-control-grid">
       <div class="ws-control-block">
@@ -5187,7 +5187,7 @@ function wsTrendPage() {
       <h4>Signal weighting</h4>
       <p>Exhibit 1 puts this stage at three weeks, spread across disconnected sources.</p>
       ${renderBars(WS_SIGNALS.map((signal) => ({ label: signal.label, value: WS.signals[signal.id] ? Math.round(signal.weight * 100) : 0, tone: WS.signals[signal.id] ? "blue" : "graphite" })), (value) => `${value}%`)}
-      <div class="readout"><strong>Sell-through anchors the ranking.</strong> A loud social signal with no commercial evidence cannot lead a brief.</div>
+      <div class="readout"><strong>Sell through anchors the ranking.</strong> A loud social signal with no commercial evidence cannot lead a brief.</div>
       <div class="kv-list">
         <div class="kv-row"><span>Sweep frequency</span><strong>Every 6 hours</strong></div>
         <div class="kv-row"><span>Designer hours removed per collection</span><strong>${Math.round(1180 * wsDriverFactor("signal", brand) * 0.72)} hrs</strong></div>
@@ -5219,7 +5219,7 @@ function wsBriefSheet(trend, confidence, usable) {
       <div class="brief-block"><span>Commercial frame</span><ul>
         <li>Fabric direction: <strong>${escapeHTML(trend.fabric)}</strong></li>
         <li>Price architecture: <strong>${escapeHTML(trend.price)}</strong></li>
-        <li>Indicative first cut: <strong>${fmtUnits(Math.round(trend.drop * (brand.rev / 0.38)))} units</strong>, deliberately short, re-cut on live sell-through</li>
+        <li>Indicative first cut: <strong>${fmtUnits(Math.round(trend.drop * (brand.rev / 0.38)))} units</strong>, deliberately short, recut on live sell through</li>
         <li>Categories: <strong>${escapeHTML(trend.cats.join(", "))}</strong></li>
       </ul></div>
       <div class="human-gate"><i class="ti ti-user-check" aria-hidden="true"></i><span><strong>What this brief does not decide.</strong> Whether the theme belongs to the house, the silhouette, the edit, the commitment to produce. The designer records a reason code; the model learns from that.</span></div>
@@ -5246,7 +5246,7 @@ function wsStudioPage() {
     <div class="viz-caption" style="border:0"><strong>${Math.round(mix.freed * 100)} points of the week are released.</strong> 82% moves to creative work, 18% funds curation and governance, a responsibility that did not exist before.</div>
   </section>
   <section class="page-section">
-    <div class="section-head"><div><h3>Task audit: automate, augment, human-led</h3><p>Round 1 Exhibit 4 splits the Design week 30 routine, 25 judgment, 45 creative and strategic. The enterprise target is 40% of routine work automated.</p></div><span class="count-note">${WS_TASKS.length} task families</span></div>
+    <div class="section-head"><div><h3>Task audit: automate, augment, human led</h3><p>Round 1 Exhibit 4 splits the Design week 30 routine, 25 judgment, 45 creative and strategic. The enterprise target is 40% of routine work automated.</p></div><span class="count-note">${WS_TASKS.length} task families</span></div>
     <div class="split-bar" style="margin-bottom:10px"><span class="split-seg" style="flex:0 0 30%;background:var(--blue)">Routine 30% · automate</span><span class="split-seg" style="flex:0 0 25%;background:var(--amber)">Judgment 25% · augment</span><span class="split-seg" style="flex:0 0 45%;background:var(--green)">Creative 45% · human</span></div>
     <div class="viz-caption" style="border:0;margin-bottom:14px"><strong>The gap is the point.</strong> Exhibit 4 classifies 45% of the week as creative and strategic. Round 2 Exhibit 2 measures only 37% actually spent there. Research and documentation are eating the difference.</div>
     <div class="ws-table-wrap"><table class="taxo-table">
@@ -5270,22 +5270,22 @@ function wsCyclePage() {
     <div class="section-head"><div><h3>The mechanism behind each reduction</h3><p>A stage only moves when a named piece of work stops being done by hand.</p></div></div>
     <div class="ws-table-wrap"><table class="ws-table">
       <thead><tr><th>Stage</th><th>Change</th><th>Now</th><th>After</th><th>Improvement</th></tr></thead>
-      <tbody>${cycle.stages.map((stage) => `<tr><td><strong>${escapeHTML(stage.name)}</strong></td><td>${escapeHTML(stage.change)}</td><td>${stage.base.toFixed(1)} wk</td><td>${stage.after.toFixed(1)} wk</td><td><strong>${stage.saved < 0.05 ? "—" : `${Math.round((stage.saved / stage.base) * 100)}% faster`}</strong></td></tr>`).join("")}</tbody>
+      <tbody>${cycle.stages.map((stage) => `<tr><td><strong>${escapeHTML(stage.name)}</strong></td><td>${escapeHTML(stage.change)}</td><td>${stage.base.toFixed(1)} wk</td><td>${stage.after.toFixed(1)} wk</td><td><strong>${stage.saved < 0.05 ? "none" : `${Math.round((stage.saved / stage.base) * 100)}% faster`}</strong></td></tr>`).join("")}</tbody>
     </table></div>
   </section>
   <section class="page-grid-2">
     <div class="rule-panel"><h4>Why the floors exist</h4><p>A model that promises zero is a model nobody signs.</p><div class="kv-list">
       <div class="kv-row"><span>Production readiness</span><strong>3.0 wks, supply constrained</strong></div>
       <div class="kv-row"><span>Concept development</span><strong>0.9 wks, human ideation</strong></div>
-      <div class="kv-row"><span>Cross-functional review</span><strong>0.5 wks, commercial sign-off</strong></div>
+      <div class="kv-row"><span>Cross functional review</span><strong>0.5 wks, commercial sign-off</strong></div>
       <div class="kv-row"><span>Trend research</span><strong>0.4 wks, designer curation</strong></div>
-    </div><div class="readout"><strong>Fabric and capacity set the last three weeks, not software.</strong> Going below needs reserved near-shore capacity, which sits in the sourcing workstream.</div></div>
+    </div><div class="readout"><strong>Fabric and capacity set the last three weeks, not software.</strong> Going below needs reserved near shore capacity, which sits in the sourcing workstream.</div></div>
     <div class="rule-panel"><h4>What the compression is worth</h4><p>Per collection and across the twelve-collection year.</p><div class="kv-list">
       <div class="kv-row"><span>Weeks saved per collection</span><strong>${(14 - cycle.total).toFixed(1)}</strong></div>
       <div class="kv-row"><span>Collections per year</span><strong>12</strong></div>
-      <div class="kv-row"><span>Extra in-season reading time</span><strong>${((14 - cycle.total) * 12 / 12).toFixed(1)} wks per collection slot</strong></div>
+      <div class="kv-row"><span>Extra in season reading time</span><strong>${((14 - cycle.total) * 12 / 12).toFixed(1)} wks per collection slot</strong></div>
       <div class="kv-row"><span>Concepts still on-trend at launch</span><strong>${Math.round(67 + (14 - cycle.total) * 3.4)}% from 67%</strong></div>
-    </div><div class="readout"><strong>Compression buys optionality.</strong> A short cycle lets the first buy stay small and the real commitment wait for live sell-through.</div></div>
+    </div><div class="readout"><strong>Compression buys optionality.</strong> A short cycle lets the first buy stay small and the real commitment wait for live sell through.</div></div>
   </section>
   <div class="assumption-note">Assumptions: baseline stage durations from Exhibit 1. Maximum reduction per stage and stage floors are stated design assumptions. Reduction is modelled as maximum cut multiplied by a driver factor (signal coverage, AI involvement or review model) and a brand craft guard derived from each brand's creative operating model. Trend relevance at launch is modelled at 3.4 points per week saved from a 67% base and is illustrative.</div>`;
 }
@@ -5321,7 +5321,7 @@ function wsBrandsPage() {
     <div class="rule-panel"><h4>Why Maison Luxe is capped</h4><p>Craft is the product.</p><div class="readout"><strong>Research copilot only.</strong> No generative imagery, no automated drafting, no threshold approvals. The cap is a decision, not a limitation to fix later.</div></div>
   </section>
   <section class="page-grid-2">
-    <div class="rule-panel"><h4>Against the enterprise target</h4><p>The under-8-week commitment is carried by the three brands where speed is the competitive question.</p><div class="kv-list">
+    <div class="rule-panel"><h4>Against the enterprise target</h4><p>The under-8 week commitment is carried by the three brands where speed is the competitive question.</p><div class="kv-list">
       <div class="kv-row"><span>In-scope brands (${portfolio.inScopeCollections} of 12 collections)</span><strong class="${portfolio.inScope < 8 ? "" : ""}">${portfolio.inScope.toFixed(1)} wks ${portfolio.inScope < 8 ? "· target met" : "· target missed"}</strong></div>
       <div class="kv-row"><span>Full portfolio including capped brands</span><strong>${portfolio.all.toFixed(1)} wks</strong></div>
       <div class="kv-row"><span>EcoWeave commitment</span><strong>10 wks at assisted level</strong></div>
@@ -5389,7 +5389,7 @@ function wsRolloutPage() {
     <div class="ws-headline-cell"><div class="metric-label">Markdown loss avoided</div><div class="metric-value pass">${wsFmtCr(value.marginRecovered)}</div><div class="metric-meta">Of the ₹${CASE.markdownLoss} Cr written off a year</div></div>
     <div class="ws-headline-cell"><div class="metric-label">Capacity released</div><div class="metric-value">${Math.round(value.fte)} FTE</div><div class="metric-meta">Of ${fmtUnits(CASE.designHeadcount)}, no new hires</div></div>
     <div class="ws-headline-cell"><div class="metric-label">Cumulative breakeven</div><div class="metric-value">${value.breakeven ? `Month ${value.breakeven}` : "Beyond 36 mths"}</div><div class="metric-meta">Spend 45/55, benefit from month 4</div></div>
-    <div class="ws-headline-cell"><div class="metric-label">Headcount reduction</div><div class="metric-value pass">Zero</div><div class="metric-meta">Zero-Layoff commitment held</div></div>
+    <div class="ws-headline-cell"><div class="metric-label">Headcount reduction</div><div class="metric-value pass">Zero</div><div class="metric-meta">Zero Layoff commitment held</div></div>
   </div>
   <section class="page-section">
     <div class="section-head"><div><h3>Three waves, value from month four</h3><p>Narrow first scope so the month-four gate gives a readable answer.</p></div></div>
@@ -5416,10 +5416,10 @@ function wsRolloutPage() {
       <div class="kv-row"><span>Equivalent revenue protected</span><strong>${wsFmtCr(value.revenueRecovered)} at ${Math.round(CASE.grossMargin * 100)}% GM</strong></div>
     </div></div>
     <div class="rule-panel"><h4>Managing resistance</h4><p>Adoption, not accuracy, kills these programmes.</p><div class="readout"><strong>Three commitments.</strong> Override always available and always logged. Nobody measured on agreeing with the model. Released time protected as creative time, not absorbed into more collections.</div></div>
-    <div class="rule-panel"><h4>Link to the wider programme</h4><p>Design sits upstream of four functions.</p><div class="readout"><strong>Merchandising gets earlier signals, Marketing gets dates it can plan against, Retail Operations gets the short cycle that makes reserved re-cut capacity worth buying.</strong> The downstream pages show that effect.</div></div>
+    <div class="rule-panel"><h4>Link to the wider programme</h4><p>Design sits upstream of four functions.</p><div class="readout"><strong>Merchandising gets earlier signals, Marketing gets dates it can plan against, Retail Operations gets the short cycle that makes reserved recut capacity worth buying.</strong> The downstream pages show that effect.</div></div>
   </section>
   ${wsAnchorsSection()}
-  <div class="assumption-note">Assumptions: FY24 revenue ₹${CASE.revenue} Cr at ${Math.round(CASE.grossMargin * 100)}% gross margin and ₹${CASE.markdownLoss} Cr of annual markdown loss, all from the Round 1 case. One third of that loss is treated as caused by product landing after the trend moved (the case states nearly a third of approved concepts lose commercial momentum before launch); this workstream claims 55% of that share, with merchandising and sourcing carrying the rest. Recovery scales linearly between a 14-week and a 6-week cycle. Spend is phased 45% in year one, 55% in year two; benefit starts in month four. Budget lines and role counts are stated assumptions for the 1,500-person Design function.</div>`;
+  <div class="assumption-note">Assumptions: FY24 revenue ₹${CASE.revenue} Cr at ${Math.round(CASE.grossMargin * 100)}% gross margin and ₹${CASE.markdownLoss} Cr of annual markdown loss, all from the Round 1 case. One third of that loss is treated as caused by product landing after the trend moved (the case states nearly a third of approved concepts lose commercial momentum before launch); this workstream claims 55% of that share, with merchandising and sourcing carrying the rest. Recovery scales linearly between a 14 week and a 6-week cycle. Spend is phased 45% in year one, 55% in year two; benefit starts in month four. Budget lines and role counts are stated assumptions for the 1,500-person Design function.</div>`;
 }
 
 
@@ -5470,11 +5470,11 @@ function wsWireEvents() {
 
 const PWC = {
   purple: "#D04A02",
-  tangerine: "#EB8C00",
-  yellow: "#C9A227",
-  rose: "#E0301E",
-  burgundy: "#9C3600",
-  deep: "#9C3600",
+  tangerine: "#C9A227",
+  yellow: "#F2D492",
+  rose: "#C6007E",
+  burgundy: "#8A1E52",
+  deep: "#2D2A26",
   ink: "#1A1A1A",
   grey: "#B9B2A8",
   rule: "#E4DED5",
@@ -5486,7 +5486,7 @@ const PWC = {
   teal: "#2A9D8F"
 };
 
-const STAGE_COLORS = [PWC.deep, PWC.purple, PWC.tangerine, PWC.teal, PWC.grey];
+const STAGE_COLORS = ["#2D2A26", "#D04A02", "#C9A227", "#C6007E", "#BDB5A9"];
 
 
 /* Keeps chart labels off each other: pushes a colliding label above or below. */
@@ -5607,7 +5607,7 @@ function wsTimeline() {
       ${draw(cycle.stages, "base", rowY.now)}
       ${draw(cycle.stages, "after", rowY.after)}
       <line x1="${gate}" y1="20" x2="${gate}" y2="${height - 26}" stroke="${PWC.rose}" stroke-dasharray="5 4"/>
-      <text x="${gate + 6}" y="17" font-size="10" font-weight="600" fill="${PWC.rose}">8-week target</text>
+      <text x="${gate + 6}" y="17" font-size="10" font-weight="600" fill="${PWC.rose}">8 week target</text>
       <text x="${left + cycle.total * unit + 6}" y="${rowY.after + 21}" font-size="11" font-weight="700" fill="${cycle.pass ? "#D04A02" : PWC.rose}">${cycle.total.toFixed(1)} wks</text>
     </svg>
     <div class="viz-legend">${cycle.stages.map((stage, index) => `<span><i style="background:${STAGE_COLORS[index]}"></i>${escapeHTML(stage.name)}</span>`).join("")}</div>
@@ -5757,7 +5757,7 @@ function wsRail() {
 }
 
 
-/* Exhibit 5: Design is the most AI-ready function in the company. */
+/* Exhibit 5: Design is the most AI ready function in the company. */
 const WS_READINESS = [
   { label: "Awareness of AI tools", design: 3.8, org: 3.1 },
   { label: "Willingness to adopt", design: 4.1, org: 3.6 },
@@ -5777,11 +5777,11 @@ function wsReadinessChart() {
       ${WS_READINESS.map((row, index) => {
         const y = 18 + index * rowHeight;
         return `<text x="${left - 10}" y="${y + 16}" text-anchor="end" font-size="11" fill="${PWC.ink}">${escapeHTML(row.label)}</text>
-        ${bar(row.design, y, row.invert ? PWC.grey : PWC.purple)}
-        ${bar(row.org, y + 16, PWC.rule === "#FFFFFF" ? "#D04A02" : PWC.grey)}`;
+        ${bar(row.design, y, "#D04A02")}
+        ${bar(row.org, y + 16, "#2D2A26")}`;
       }).join("")}
     </svg>
-    <div class="viz-legend"><span><i style="background:${PWC.purple}"></i>Design &amp; Creative</span><span><i style="background:#D04A02"></i>Company average</span></div>
+    <div class="viz-legend"><span><i style="background:#D04A02"></i>Design function</span><span><i style="background:#2D2A26"></i>Company average</span></div>
     <div class="viz-caption"><strong>Willingness 4.1, fear 2.2.</strong> The function most ready to adopt is also the one leadership ranks Medium priority. That is why it is a pilot, not an enterprise rollout.</div>
   </div>`;
 }
@@ -5826,10 +5826,10 @@ let CATS = [
 ];
 
 let SUPPLIERS = [
-  { id: "SUP001", name: "Tirupur Knits",      share: 0.28, rel: 0.94 },
-  { id: "SUP002", name: "Ludhiana Woollens",  share: 0.19, rel: 0.81 },
-  { id: "SUP003", name: "Noida Apparel Park", share: 0.23, rel: 0.88 },
-  { id: "SUP004", name: "Bengaluru Cut & Sew",share: 0.17, rel: 0.91 },
+  { id: "SUP001", name: "Tirupur Knits",       share: 0.28, rel: 0.94 },
+  { id: "SUP002", name: "Ludhiana Woollens",   share: 0.19, rel: 0.81 },
+  { id: "SUP003", name: "Noida Apparel Park",  share: 0.23, rel: 0.88 },
+  { id: "SUP004", name: "Bengaluru Cut & Sew", share: 0.17, rel: 0.91 },
   { id: "SUP005", name: "Surat Textile Mills", share: 0.13, rel: 0.73 }
 ];
 
@@ -5847,7 +5847,7 @@ const STATES = {
 const ORDER = ["OUT", "BLOCKED", "RISK", "BREAKOUT", "TERMINAL", "IMBAL", "SLOW", "HEALTHY"];
 const ACTION_MARKS = {
   Replenish: "red",
-  "Re-cut": "violet",
+  "Recut": "violet",
   Transfer: "blue",
   Markdown: "amber",
   Escalate: "graphite"
@@ -5858,6 +5858,8 @@ let CELLS = [];
 let M = {};
 let M_BASE = null;
 let QUEUE = [];
+let QUEUE_TOTAL = 0;
+let DOCKET_SHOWN = 20;
 let RECOVERED = 0;
 let DEMAND_HISTORY = []; // real weekly sales [{week, units}] from /api/demand-history
 let LOG = [];
@@ -5900,11 +5902,11 @@ const PAGE_META = {
   review: { kicker: "Decision review / actions requiring approval", title: "Decision review", subtitle: "Approve, reject or inspect the evidence behind each ranked action." },
   demand: { kicker: "Control tower / demand", title: "Demand and model quality", subtitle: "What the forecast says, how accurate it has been, and what it relies on." },
   network: { kicker: "Control tower / network", title: "Stock in the wrong place", subtitle: "Who is holding too much, who is short, and which moves pay for themselves." },
-  margin: { kicker: "Control tower / margin", title: "Where margin leaks", subtitle: "Exposure by category, sell-through, and how deep a markdown should go." },
-  supply: { kicker: "Control tower / supply", title: "Can suppliers keep up", subtitle: "Reliability, lead time, committed capacity and what can still be re-cut." },
+  margin: { kicker: "Control tower / margin", title: "Where margin leaks", subtitle: "Exposure by category, sell through, and how deep a markdown should go." },
+  supply: { kicker: "Control tower / supply", title: "Can suppliers keep up", subtitle: "Reliability, lead time, committed capacity and what can still be recut." },
   scenario: { kicker: "Decide / scenario analysis", title: "Scenario analysis", subtitle: "Change the assumptions in the left panel and compare the resulting decision packet." },
-  trend: { kicker: "Workstream 1 / trend discovery", title: "Trend-to-design radar", subtitle: "Continuous signal ingestion replacing the three-week manual research sweep." },
-  studio: { kicker: "Workstream 1 / concept development", title: "Concept studio", subtitle: "What is automated, what is augmented, and what stays human-led in the designer week." },
+  trend: { kicker: "Workstream 1 / trend discovery", title: "Trend to design radar", subtitle: "Continuous signal ingestion replacing the three-week manual research sweep." },
+  studio: { kicker: "Workstream 1 / concept development", title: "Concept studio", subtitle: "What is automated, what is augmented, and what stays human led in the designer week." },
   cycle: { kicker: "Workstream 1 / cycle compression", title: "Cycle compression", subtitle: "Fourteen weeks to under eight, stage by stage, with the floors that cannot move." },
   brands: { kicker: "Workstream 1 / brand differentiation", title: "Brand configuration", subtitle: "One capability at five different levels of AI involvement across the portfolio." },
   trust: { kicker: "Workstream 1 / IP and governance", title: "Authorship and provenance", subtitle: "Evidence of human authorship captured as the work happens, across three jurisdictions." },
@@ -6203,7 +6205,7 @@ function buildQueue() {
       if (quantity > 0) queue.push({ t: "Replenish", s: state, c: cell, qty: quantity, val: cell.unmet * cell.unit, why: `Cover ${cell.cover.toFixed(1)} wks against a ${(M.ltW + 1).toFixed(1)} wk horizon. Safety stock ${fmtUnits(cell.ss)} u at ${L.svc}%.` });
     } else if (state === "BREAKOUT") {
       const quantity = Math.ceil(cell.fc * 4);
-      queue.push({ t: "Re-cut", s: state, c: cell, qty: quantity, val: quantity * cell.unit * 0.55 * cell.sku.sup.rel, why: `Trend up ${Math.round(cell.growth)}% with ${cell.cover.toFixed(1)} wks cover. ${cell.sku.sup.name} at ${Math.round(cell.sku.sup.rel * 100)}% on-time.` });
+      queue.push({ t: "Recut", s: state, c: cell, qty: quantity, val: quantity * cell.unit * 0.55 * cell.sku.sup.rel, why: `Trend up ${Math.round(cell.growth)}% with ${cell.cover.toFixed(1)} wks cover. ${cell.sku.sup.name} at ${Math.round(cell.sku.sup.rel * 100)}% on time.` });
     } else if (state === "IMBAL") {
       let donor = null;
       let bestExcess = 0;
@@ -6220,13 +6222,14 @@ function buildQueue() {
       }
     } else if (state === "SLOW" || state === "TERMINAL") {
       const ladderResult = ladder(cell);
-      if (ladderResult.best > Math.max(L.disc, cell.md)) queue.push({ t: "Markdown", s: state, c: cell, depth: ladderResult.best, val: ladderResult.gain, ladder: ladderResult, why: `Sell-through ${Math.round(cell.st * 100)}% against ${Math.round(M.planST * 100)}% plan, ${cell.cover.toFixed(0)} wks cover with ${L.weeks} wks left.` });
+      if (ladderResult.best > Math.max(L.disc, cell.md)) queue.push({ t: "Markdown", s: state, c: cell, depth: ladderResult.best, val: ladderResult.gain, ladder: ladderResult, why: `Sell through ${Math.round(cell.st * 100)}% against ${Math.round(M.planST * 100)}% plan, ${cell.cover.toFixed(0)} wks cover with ${L.weeks} wks left.` });
     } else if (state === "BLOCKED") {
       queue.push({ t: "Escalate", s: state, c: cell, qty: Math.ceil(cell.gap), val: -cell.unmet * cell.unit, why: `Need ${fmtUnits(cell.gap)} u but weekly capacity is fully committed. Substitute or accept the loss.` });
     }
   });
   queue.sort((a, b) => Math.abs(b.val) - Math.abs(a.val));
-  QUEUE = queue.slice(0, 60);
+  QUEUE_TOTAL = queue.length;
+  QUEUE = queue.slice(0, 400);
   if (!SELECTED_ID && QUEUE[0]) SELECTED_ID = actionKey(QUEUE[0]);
   if (SELECTED_ID && !QUEUE.some((item) => actionKey(item) === SELECTED_ID) && !SELECTED_SNAPSHOT) SELECTED_ID = QUEUE[0] ? actionKey(QUEUE[0]) : null;
 }
@@ -6273,7 +6276,7 @@ function _recordDecision(action, cell, decisionType) {
 
 function applyAccept(action) {
   const cell = action.c;
-  if (action.t === "Replenish" || action.t === "Re-cut") { cell.inTransit += action.qty; cell.recv += action.qty; }
+  if (action.t === "Replenish" || action.t === "Recut") { cell.inTransit += action.qty; cell.recv += action.qty; }
   else if (action.t === "Transfer") { action.from.onHand -= action.qty; cell.onHand += action.qty; }
   else if (action.t === "Markdown") cell.md = action.depth;
   cell.accepted = action.t;
@@ -6303,21 +6306,10 @@ function demandChart(selectedAction = getSelectedAction()) {
   const right = 20;
   const top = 26;
   const bottom = 54;
+  const random = rng(421);
+  const totalBase = CELLS.reduce((sum, cell) => sum + cell.base, 0);
   const totalForecast = CELLS.reduce((sum, cell) => sum + cell.fc, 0);
-
-  // use real weekly sales if available, otherwise synthetic baseline
-  const isReal = DEMAND_HISTORY.length > 0;
-  let history;
-  if (isReal) {
-    history = DEMAND_HISTORY.map((point) => point.units);
-    while (history.length < 18) history.unshift(history[0] || 0);
-    history = history.slice(-18);
-  } else {
-    const random = rng(421);
-    const totalBase = CELLS.reduce((sum, cell) => sum + cell.base, 0);
-    history = Array.from({ length: 18 }, (_, index) => totalBase * (0.78 + 0.16 * Math.sin(index / 2.7) + (random() - 0.5) * 0.08));
-  }
-
+  const history = Array.from({ length: 18 }, (_, index) => totalBase * (0.78 + 0.16 * Math.sin(index / 2.7) + (random() - 0.5) * 0.08));
   const forecast = Array.from({ length: 8 }, (_, index) => totalForecast * (0.92 + 0.11 * Math.sin((index + 18) / 2.6)));
   const max = Math.max(...history.concat(forecast), 1) * 1.18;
   const x = (index) => scale(index, 0, 25, left, width - right);
@@ -6336,16 +6328,13 @@ function demandChart(selectedAction = getSelectedAction()) {
     return `<line x1="${left}" y1="${yy}" x2="${width - right}" y2="${yy}" stroke="#E4DED5"/><text x="${left - 10}" y="${yy + 4}" text-anchor="end" font-size="11" fill="#4F4A44">${fmtUnits(value)}</text>`;
   }).join("");
   const ticks = [0, 5, 10, 15, 17, 21, 25].map((index) => `<text x="${x(index)}" y="${height - 30}" text-anchor="middle" font-size="11" fill="#4F4A44">wk ${14 + index}</text>`).join("");
-  const dataBadge = isReal
-    ? `<text x="${width - right}" y="${top - 6}" text-anchor="end" font-size="10" font-weight="600" fill="#2F7D5E">● Real sales data</text>`
-    : `<text x="${width - right}" y="${top - 6}" text-anchor="end" font-size="10" fill="#8A7C70">Synthetic baseline</text>`;
   return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Actual demand to week 31 and forecast demand for the following eight weeks, in units per week">
-    ${grid}${ticks}${dataBadge}
+    ${grid}${ticks}
     <path d="${linePath(bandPoints)} Z" fill="#D04A02" opacity="0.12"/>
     <path d="${linePath(actualPoints)}" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linejoin="round"/>
     <path d="${linePath(forecastPoints)}" fill="none" stroke="#D04A02" stroke-width="2.4" stroke-dasharray="6 4" stroke-linejoin="round"/>
-    <line x1="${x(17.5)}" y1="${top}" x2="${x(17.5)}" y2="${height - bottom}" stroke="#2D2A26" stroke-dasharray="3 3"/>
-    <text x="${x(17.5) + 7}" y="${top + 2}" font-size="11" font-weight="700" fill="#2D2A26">forecast begins</text>
+    <line x1="${x(17.5)}" y1="${top}" x2="${x(17.5)}" y2="${height - bottom}" stroke="#7C766D" stroke-dasharray="3 3"/>
+    <text x="${x(17.5) + 7}" y="${top + 2}" font-size="11" font-weight="700" fill="#4F4A44">forecast begins</text>
     ${selectedPoint ? `<circle cx="${selectedPoint[0]}" cy="${selectedPoint[1]}" r="5" fill="#C6007E" stroke="#FFFFFF" stroke-width="1.5"/><text x="${selectedPoint[0] + 9}" y="${selectedPoint[1] - 9}" font-size="11" font-weight="600" fill="#C6007E">selected position</text>` : ""}
     <text transform="translate(20 ${(top + height - bottom) / 2}) rotate(-90)" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A1A">Demand, units per week</text>
     <text x="${(left + width - right) / 2}" y="${height - 8}" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A1A">Season week</text>
@@ -6373,9 +6362,9 @@ function ladderChart(cell) {
   }).join("");
   return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Modelled margin at each markdown depth, with the recommended depth marked">
     ${grid}
-    <line x1="${x(40)}" y1="${top}" x2="${x(40)}" y2="${height - bottom}" stroke="#A31A12" stroke-dasharray="4 4"/>
-    <text x="${x(40) + 5}" y="${top + 2}" font-size="10.5" font-weight="600" fill="#A31A12">40% guardrail</text>
-    <path d="${linePath(points)}" fill="none" stroke="#EB8C00" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="${x(40)}" y1="${top}" x2="${x(40)}" y2="${height - bottom}" stroke="#7A0F0A" stroke-dasharray="4 4"/>
+    <text x="${x(40) + 5}" y="${top + 2}" font-size="10.5" font-weight="700" fill="#7A0F0A">40% guardrail</text>
+    <path d="${linePath(points)}" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linejoin="round"/>
     ${result.points.map((point) => `<circle cx="${x(point.discount)}" cy="${y(point.margin)}" r="${point.discount === result.best ? 6 : 3.5}" fill="${point.discount === result.best ? "#C6007E" : "#2D2A26"}"/><text x="${x(point.discount)}" y="${height - 34}" text-anchor="middle" font-size="11" font-weight="${point.discount === result.best ? 700 : 400}" fill="${point.discount === result.best ? "#C6007E" : "#4F4A44"}">${point.discount}%</text>`).join("")}
     <text x="${x(result.best)}" y="${y(bestPoint.margin) - 14}" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C6007E">${fmtINR(bestPoint.margin)} at ${result.best}%</text>
     <text transform="translate(20 ${(top + height - bottom) / 2}) rotate(-90)" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A1A">Modelled margin, ₹</text>
@@ -6386,7 +6375,7 @@ function ladderChart(cell) {
 function renderBars(rows, formatter = fmtUnits) {
   const max = Math.max(...rows.map((row) => row.value), 1);
   if (!rows.length) return `<div class="empty-state"><strong>No comparable positions</strong>Move a lever or load a different scenario to populate this view.</div>`;
-  return `<div class="bar-list">${rows.map((row) => `<div class="bar-row"><span>${escapeHTML(row.label)}</span><div class="bar-track"><div class="bar-fill ${row.tone || ""}" style="width:${Math.max(3, (row.value / max) * 100).toFixed(1)}%"></div></div><span class="bar-value">${formatter(row.value)}</span></div>`).join("")}</div>`;
+  return `<div class="bar-list">${rows.map((row) => `<div class="bar-row"><span>${escapeHTML(row.label)}</span><div class="bar-track"><div class="bar-fill ${row.tone || ""}" style="${row.color ? `background:${row.color};` : ""}width:${Math.max(3, (row.value / max) * 100).toFixed(1)}%"></div></div><span class="bar-value">${formatter(row.value)}</span></div>`).join("")}</div>`;
 }
 
 function renderSidebar() {
@@ -6407,7 +6396,7 @@ function renderSidebar() {
     ["trust", "shield-check", "Authorship & IP"],
     ["rollout", "rocket", "Rollout & value"]
   ];
-  const navButton = ([page, icon, label]) => `<button class="nav-item ${PAGE === page ? "active" : ""}" type="button" data-page="${page}" aria-current="${PAGE === page ? "page" : "false"}"><i class="ti ti-${icon}" aria-hidden="true"></i><span>${label}</span>${page === "review" ? `<span class="nav-count">${QUEUE.length}</span>` : ""}</button>`;
+  const navButton = ([page, icon, label]) => `<button class="nav-item ${PAGE === page ? "active" : ""}" type="button" data-page="${page}" aria-current="${PAGE === page ? "page" : "false"}"><i class="ti ti-${icon}" aria-hidden="true"></i><span>${label}</span>${page === "review" ? `<span class="nav-count">${QUEUE_TOTAL}</span>` : ""}</button>`;
   return `<aside class="sidebar ${SIDEBAR_EXPANDED ? "is-expanded" : ""}" aria-label="Primary navigation">
     <div>
       <div class="brand"><div class="brand-mark">SV</div><div><div class="brand-name">StyleVerse</div><span class="brand-sub">AI transformation control tower</span></div></div>
@@ -6449,7 +6438,7 @@ function renderImpactStrip() {
     { label: "Margin at risk", value: fmtINR(M.margRisk), move: move(M.margRisk, base.margRisk), meta: `${(M.dist.OUT || 0) + (M.dist.RISK || 0) + (M.dist.BLOCKED || 0) + (M.dist.IMBAL || 0)} positions exposed`, tone: "risk" },
     { label: "Revenue at risk", value: fmtINR(M.revRisk), move: move(M.revRisk, base.revRisk), meta: "Unmet demand this horizon", tone: "risk" },
     { label: "Target inventory", value: fmtINR(M.wc), move: move(M.wc, base.wc), meta: `${(M.ltW + 1).toFixed(1)} week cover horizon`, tone: "neutral" },
-    { label: "Markdown exposure", value: fmtINR(M.mdExp), move: move(M.mdExp, base.mdExp), meta: `${(M.dist.SLOW || 0) + (M.dist.TERMINAL || 0)} over-covered positions`, tone: "warn" },
+    { label: "Markdown exposure", value: fmtINR(M.mdExp), move: move(M.mdExp, base.mdExp), meta: `${(M.dist.SLOW || 0) + (M.dist.TERMINAL || 0)} over covered positions`, tone: "warn" },
     { label: "Recovered", value: fmtINR(RECOVERED), move: move(RECOVERED, base.recovered, false), meta: `${accepted} accepted · ${rejected} rejected`, tone: "recovered" }
   ];
   return `<section class="istrip" aria-label="Live model impact">
@@ -6474,38 +6463,44 @@ function renderMetricLedger() {
   const metrics = [
     { label: "Margin at risk", value: fmtINR(M.margRisk), meta: `${M.dist.OUT + M.dist.RISK + M.dist.BLOCKED + M.dist.IMBAL} positions exposed`, tone: "risk" },
     { label: "Revenue at risk", value: fmtINR(M.revRisk), meta: "Unmet demand horizon", tone: "risk" },
-    { label: "Markdown exposure", value: fmtINR(M.mdExp), meta: `${M.dist.SLOW + M.dist.TERMINAL} over-covered positions`, tone: "" },
+    { label: "Markdown exposure", value: fmtINR(M.mdExp), meta: `${M.dist.SLOW + M.dist.TERMINAL} over covered positions`, tone: "" },
     { label: "Target inventory", value: fmtINR(M.wc), meta: `${(M.ltW + 1).toFixed(1)} week cover horizon`, tone: "" },
     { label: "Recovered", value: fmtINR(RECOVERED), meta: `${LOG.filter((item) => item.decision === "Accepted").length} accepted actions this session`, tone: "recovered" }
   ];
-  return `<div class="metric-ledger">${metrics.map((metric) => `<div class="metric-cell"><div class="metric-label">${metric.label}</div><div class="metric-value ${metric.tone}">${metric.value}</div><div class="metric-meta">${metric.meta}</div></div>`).join("")}<div class="provenance">Baseline · refreshed 08 Sep 2026 · values calculated from current inventory, demand, lead-time and capacity assumptions.</div></div>`;
+  return `<div class="metric-ledger">${metrics.map((metric) => `<div class="metric-cell"><div class="metric-label">${metric.label}</div><div class="metric-value ${metric.tone}">${metric.value}</div><div class="metric-meta">${metric.meta}</div></div>`).join("")}<div class="provenance">Baseline · refreshed 08 Sep 2026 · values calculated from current inventory, demand, lead time and capacity assumptions.</div></div>`;
 }
 
 function renderDistribution() {
   const total = CELLS.length || 1;
-  return `<section class="distribution" aria-label="Network state mix"><div class="distribution-title">Network state mix<span>Positions requiring action</span></div><div class="state-bar">${ORDER.map((state) => `<span class="state-segment" style="width:${((M.dist[state] || 0) / total) * 100}%;background:${stateColor(state)}" title="${stateLabel(state)}: ${M.dist[state] || 0}"></span>`).join("")}</div><div class="legend">${ORDER.filter((state) => M.dist[state]).map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)} ${M.dist[state]}</span>`).join("")}</div></section>`;
+  return `<section class="distribution" aria-label="Network state mix"><div class="distribution-title">Network state mix<span>Positions requiring action</span></div><div class="state-bar">${ORDER.map((state) => `<span class="state-segment" style="width:${((M.dist[state] || 0) / total) * 100}%;background:${stateColor(state)}" title="${stateLabel(state)}: ${M.dist[state] || 0}"></span>`).join("")}</div><div class="legend">${LEGEND_ORDER.filter((state) => M.dist[state]).map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)} ${M.dist[state]}</span>`).join("")}</div></section>`;
 }
+
+const LEGEND_ORDER = ["HEALTHY", "BREAKOUT", "SLOW", "IMBAL", "TERMINAL", "RISK", "BLOCKED", "OUT"];
 
 function stateColor(state) {
   return {
-    OUT: "#7A0F0A",
-    BLOCKED: "#2D2A26",
-    RISK: "#E0301E",
-    BREAKOUT: "#C6007E",
-    TERMINAL: "#9C3600",
-    IMBAL: "#D04A02",
-    SLOW: "#E8B34A",
-    HEALTHY: "#BDB5A9"
-  }[state] || "#D8D2C8";
+    HEALTHY: "#F4EDE3",
+    BREAKOUT: "#FDEFD2",
+    SLOW: "#F9D9A3",
+    IMBAL: "#F0B27A",
+    TERMINAL: "#E08B4A",
+    RISK: "#CF5B22",
+    BLOCKED: "#A83912",
+    OUT: "#7A1E0C"
+  }[state] || "#FFFFFF";
 }
+
+
 
 function renderConclusion() {
   const exposed = CELLS.filter((cell) => cell.state !== "HEALTHY").length;
-  return `<section class="conclusion"><div class="eyebrow">Decision summary</div><h2><span class="emphasis">${fmtINR(M.margRisk)}</span> of margin is exposed across ${fmtUnits(exposed)} positions.</h2><p>Value at risk is concentrated in stockout risk and capacity-blocked positions. Review the highest-value actions below.</p><button class="text-link" type="button" data-page="network">Open full state board →</button><div class="snapshot-line"><span class="snapshot-dot"></span>Model recommendation layer active · ${STORES.length} stores · ${fmtUnits(CELLS.length)} live positions</div></section>`;
+  return `<section class="conclusion"><div class="eyebrow">Decision summary</div><h2><span class="emphasis">${fmtINR(M.margRisk)}</span> of margin is exposed across ${fmtUnits(exposed)} positions.</h2><p>Value at risk is concentrated in stockout risk and capacity blocked positions. Review the highest value actions below.</p><button class="text-link" type="button" data-page="network">Open full state board →</button><div class="snapshot-line"><span class="snapshot-dot"></span>Model recommendation layer active · ${STORES.length} stores · ${fmtUnits(CELLS.length)} live positions</div></section>`;
 }
 
-function renderActionDocket(limit = 5) {
-  const actions = filteredQueue().slice(0, limit);
+function renderActionDocket(limit = 5, paged = false) {
+  const all = filteredQueue();
+  const shown = paged ? Math.min(DOCKET_SHOWN, all.length) : limit;
+  const actions = all.slice(0, shown);
   if (!actions.length) return `<div class="empty-state"><strong>No open recommendations for this scenario.</strong>Adjust the assumptions in the sidebar or clear the current filter.</div>`;
   const rows = actions.map((action, index) => {
     const selected = actionKey(action) === SELECTED_ID;
@@ -6517,17 +6512,25 @@ function renderActionDocket(limit = 5) {
       <div class="dq-tag"><span class="tag tag-${(action.t || "").toLowerCase().replace(/[^a-z]/g, "")}">${escapeHTML(action.t)}</span><span class="dq-state state-pill state-${action.s}">${escapeHTML(stateLabel(action.s))}</span></div>
       <div class="dq-item"><strong>${escapeHTML(action.c.sku.name || action.c.sku.id)}</strong><span class="dq-meta"><span class="mono">${escapeHTML(action.c.sku.id)}</span> · ${escapeHTML(action.c.store.name)}</span></div>
       <div class="dq-reason">${escapeHTML(action.why)}</div>
-      <div class="dq-value"><strong>${action.val > 0 ? fmtINR(action.val) : "—"}</strong><span>value at stake</span></div>
+      <div class="dq-value"><strong>${action.val > 0 ? fmtINR(action.val) : "none"}</strong><span>value at stake</span></div>
       <div class="dq-qty"><strong>${escapeHTML(proposed)}</strong><span>proposed</span></div>
       <div class="dq-actions">${decided
         ? `<span class="dq-done ${decided === "Rejected" ? "is-reject" : "is-accept"}">${decided === "Rejected" ? "Rejected" : "Accepted"}</span>`
         : `<button type="button" class="btn-accept" data-queue-accept="${key}">Accept</button><button type="button" class="btn-reject" data-queue-reject="${key}">Reject</button>`}</div>
     </article>`;
   }).join("");
+  const pager = paged ? `<div class="dq-pager">
+      <span class="dq-pager-count">Showing <strong>${shown}</strong> of <strong>${all.length}</strong> open recommendations${FILTER ? " in this filter" : ""}</span>
+      <span class="dq-pager-actions">
+        ${shown < all.length ? `<button type="button" class="pager-btn primary" data-docket-more>Show next ${Math.min(20, all.length - shown)}</button>` : ""}
+        ${shown < all.length ? `<button type="button" class="pager-btn" data-docket-all>Show all ${all.length}</button>` : ""}
+        ${shown > 20 ? `<button type="button" class="pager-btn" data-docket-reset>Back to top 20</button>` : ""}
+      </span>
+    </div>` : "";
   return `<div class="dq-list">
     <div class="dq-head"><span>#</span><span>Action</span><span>Item and location</span><span>Why this action</span><span>Value</span><span>Proposed</span><span>Decision</span></div>
     ${rows}
-  </div>${FILTER ? `<div class="filter-chip">${escapeHTML(filterLabel())}<button type="button" data-clear-filter aria-label="Clear filter">×</button></div>` : ""}`;
+  </div>${pager}${FILTER ? `<div class="filter-chip">${escapeHTML(filterLabel())}<button type="button" data-clear-filter aria-label="Clear filter">×</button></div>` : ""}`;
 }
 
 function filteredQueue() {
@@ -6565,12 +6568,12 @@ function evidenceFor(action) {
   ];
   if (action.t === "Markdown") return [
     ["Situation", `Cover is <strong>${cover}</strong> with ${L.weeks} weeks left in season.`],
-    ["Sell-through", `Current sell-through is <strong>${Math.round(cell.st * 100)}%</strong> vs ${Math.round(M.planST * 100)}% plan.`],
+    ["Sell through", `Current sell through is <strong>${Math.round(cell.st * 100)}%</strong> vs ${Math.round(M.planST * 100)}% plan.`],
     ["Margin ladder", `The modeled peak is <strong>${action.depth}%</strong> off.`],
     ["Proposed effect", `Recover <strong>${fmtINR(action.val)}</strong> before season end.`],
     ["Caveat", "Deeper markdown is not required at current demand."]
   ];
-  if (action.t === "Re-cut") return [
+  if (action.t === "Recut") return [
     ["Situation", `Trend is up <strong>${Math.round(cell.growth)}%</strong> with ${cover} cover.`],
     ["Demand signal", "Velocity remains above plan for the current review window."],
     ["Supply context", `${escapeHTML(cell.sku.sup.name)} · <strong>${Math.round(cell.sku.sup.rel * 100)}%</strong> reliability.`],
@@ -6598,14 +6601,14 @@ function renderInspector() {
   if (!action) return `<section class="inspector"><div class="empty-state"><strong>No action selected</strong>Choose a recommendation row to inspect its rationale and proposed effect.</div></section>`;
   const status = DECISION_STATUS;
   const proposed = action.t === "Markdown" ? `Take to ${action.depth}%` : `${fmtUnits(action.qty)} u`;
-  const statusMarkup = status ? `<div class="inspector-status ${status === "Rejected" ? "rejected" : ""}"><i class="ti ti-${status === "Accepted" ? "circle-check" : "circle-x"}" aria-hidden="true"></i>${status} — record updated</div>` : "";
+  const statusMarkup = status ? `<div class="inspector-status ${status === "Rejected" ? "rejected" : ""}"><i class="ti ti-${status === "Accepted" ? "circle-check" : "circle-x"}" aria-hidden="true"></i>${status} record updated</div>` : "";
   const actionTitle = `${action.t} ${action.c.sku.id}`;
-  const actionButton = status === "Accepted" ? "Accepted — record updated" : status === "Rejected" ? "Rejected — record updated" : "Accept recommendation";
-  return `<section class="inspector" aria-labelledby="inspectorTitle"><div class="inspector-top"><div><div class="inspector-kicker">Decision review · selected</div><h3 id="inspectorTitle">${escapeHTML(actionTitle)}</h3><div class="inspector-store">${escapeHTML(action.c.store.name)}</div></div><div class="inspector-index">${stateLabel(action.s).toUpperCase()}</div></div><div class="inspector-impact"><div><span class="impact-label">Expected value</span><span class="impact-value">${action.val > 0 ? fmtINR(action.val) : "—"}</span></div><div><span class="impact-label">Proposed</span><span class="impact-value">${escapeHTML(proposed)}</span></div></div>${statusMarkup}<div class="rationale-title">Recommendation rationale</div><p class="rationale-sub">Evidence register for the selected action.</p><div class="evidence-register">${evidenceFor(action).map(([label, value], index) => `<div class="evidence-row"><span class="evidence-label">${label}</span><span class="evidence-value ${index === 1 ? "purple" : ""}">${value}</span></div>`).join("")}</div><div class="inspector-actions"><button class="primary-btn ${status === "Accepted" ? "accepted" : status === "Rejected" ? "rejected" : ""}" type="button" data-accept ${status ? "disabled" : ""}>${actionButton}</button><button class="secondary-btn" type="button" data-reject>${status ? "Close" : "Reject"}</button></div>${REJECT_CONFIRM ? `<div class="reject-confirm">Reject this ${action.t.toLowerCase()} recommendation? The position will remain exposed in the queue.<div class="confirm-actions"><button type="button" data-confirm-reject>Confirm reject</button><button type="button" class="cancel" data-cancel-reject>Cancel</button></div></div>` : ""}</section>`;
+  const actionButton = status === "Accepted" ? "Accepted record updated" : status === "Rejected" ? "Rejected record updated" : "Accept recommendation";
+  return `<section class="inspector" aria-labelledby="inspectorTitle"><div class="inspector-top"><div><div class="inspector-kicker">Decision review · selected</div><h3 id="inspectorTitle">${escapeHTML(actionTitle)}</h3><div class="inspector-store">${escapeHTML(action.c.store.name)}</div></div><div class="inspector-index">${stateLabel(action.s).toUpperCase()}</div></div><div class="inspector-impact"><div><span class="impact-label">Expected value</span><span class="impact-value">${action.val > 0 ? fmtINR(action.val) : "none"}</span></div><div><span class="impact-label">Proposed</span><span class="impact-value">${escapeHTML(proposed)}</span></div></div>${statusMarkup}<div class="rationale-title">Recommendation rationale</div><p class="rationale-sub">Evidence register for the selected action.</p><div class="evidence-register">${evidenceFor(action).map(([label, value], index) => `<div class="evidence-row"><span class="evidence-label">${label}</span><span class="evidence-value ${index === 1 ? "purple" : ""}">${value}</span></div>`).join("")}</div><div class="inspector-actions"><button class="primary-btn ${status === "Accepted" ? "accepted" : status === "Rejected" ? "rejected" : ""}" type="button" data-accept ${status ? "disabled" : ""}>${actionButton}</button><button class="secondary-btn" type="button" data-reject>${status ? "Close" : "Reject"}</button></div>${REJECT_CONFIRM ? `<div class="reject-confirm">Reject this ${action.t.toLowerCase()} recommendation? The position will remain exposed in the queue.<div class="confirm-actions"><button type="button" data-confirm-reject>Confirm reject</button><button type="button" class="cancel" data-cancel-reject>Cancel</button></div></div>` : ""}</section>`;
 }
 
 function renderDemandEvidence() {
-  return `<section class="evidence-sheet"><div class="evidence-title"><h3>Demand forecast evidence</h3><span>Actual / forecast · units per week</span></div><div class="chart-frame">${demandChart()}<div class="chart-note"><span><i class="chart-key"></i>Actual</span><span><i class="chart-key forecast"></i>Forecast</span><span><i class="chart-key selected"></i>Selected action signal</span></div></div><div class="readout"><strong>Demand is building into the selected position.</strong> The current action protects cover before the forecast moves beyond the supplier lead-time horizon.</div></section>`;
+  return `<section class="evidence-sheet"><div class="evidence-title"><h3>Demand forecast evidence</h3><span>Actual / forecast · units per week</span></div><div class="chart-frame">${demandChart()}<div class="chart-note"><span><i class="chart-key"></i>Actual</span><span><i class="chart-key forecast"></i>Forecast</span><span><i class="chart-key selected"></i>Selected action signal</span></div></div><div class="readout"><strong>Demand is building into the selected position.</strong> The current action protects cover before the forecast moves beyond the supplier lead time horizon.</div></section>`;
 }
 
 function renderSelectedPosition() {
@@ -6621,7 +6624,7 @@ function renderDecisionRecord() {
     ? `<div class="dq-list dq-log">${LOG.slice(0, 12).map((entry) => `<article class="dq-row is-log">
         <div class="dq-tag"><span class="tag tag-${(entry.t || "").toLowerCase().replace(/[^a-z]/g, "")}">${escapeHTML(entry.t)}</span></div>
         <div class="dq-item"><strong>${escapeHTML(entry.sku)}</strong><span class="dq-meta">${escapeHTML(entry.store)}</span></div>
-        <div class="dq-value"><strong>${entry.val ? fmtINR(entry.val) : "—"}</strong><span>impact</span></div>
+        <div class="dq-value"><strong>${entry.val ? fmtINR(entry.val) : "none"}</strong><span>impact</span></div>
         <div class="dq-actions"><span class="dq-done ${entry.decision === "Accepted" ? "is-accept" : "is-reject"}"><i class="ti ti-${entry.decision === "Accepted" ? "check" : "x"}" aria-hidden="true"></i>${escapeHTML(entry.decision)}</span><span class="dq-time mono">${escapeHTML(entry.time)}</span></div>
       </article>`).join("")}</div>`
     : `<div class="empty-state">Accepted and rejected actions will appear here as the audit trail for this session.</div>`;
@@ -6640,7 +6643,7 @@ function renderOverview() {
   const exposureRows = [
     { label: "Margin at risk", value: M.margRisk, color: "#A31A12" },
     { label: "Revenue at risk", value: M.revRisk, color: "#2D2A26" },
-    { label: "Markdown exposure", value: M.mdExp, color: "#E8B34A" },
+    { label: "Markdown exposure", value: M.mdExp, color: "#C6007E" },
     { label: "Recovered", value: RECOVERED, color: "#8A6D1F" }
   ];
   const exposureMax = Math.max(...exposureRows.map(x => x.value), 1);
@@ -6661,7 +6664,7 @@ function renderOverview() {
   </section>
   <section class="executive-dashboard-grid">
     <div class="dashboard-card">
-      <div class="card-head"><div><h3>Value at stake</h3><div class="card-sub">Current model exposure and recovered value</div></div><span class="count-note">₹ Cr</span></div>
+      <div class="card-head"><div><h3>Value at stake</h3><div class="card-sub">Current model exposure and recovered value</div></div><span class="count-note">${fmtINR(M.margRisk + M.revRisk + M.mdExp)} exposed · ${fmtINR(RECOVERED)} recovered</span></div>
       <div class="dashboard-bar-list">${exposureRows.map(row => `<div class="dashboard-bar-row"><span>${row.label}</span><div class="dashboard-bar-track"><div class="dashboard-bar-fill" style="width:${Math.max(4,(row.value/exposureMax)*100).toFixed(1)}%;background:${row.color}"></div></div><strong class="dashboard-bar-value">${fmtINR(row.value)}</strong></div>`).join('')}</div>
       <div class="viz-legend" style="margin-top:16px">${exposureRows.map(row => `<span><i style="background:${row.color}"></i>${row.label}</span>`).join('')}</div>
     </div>
@@ -6674,12 +6677,12 @@ function renderOverview() {
     <div class="dashboard-card">
       <div class="card-head"><div><h3>Inventory cover distribution</h3><div class="card-sub">Positions by weeks of cover</div></div></div>
       <svg viewBox="0 0 520 210" role="img" aria-label="Inventory cover distribution" style="width:100%;height:auto">
-        ${coverBuckets.map((b,i)=>{const h=(145*b.count)/maxCover;const x=38+i*68;const y=176-h;const color=['#7A0F0A','#C6007E','#8A6D1F','#8A6D1F','#BDB5A9','#E8B34A','#2D2A26'][i];return `<rect x="${x}" y="${y}" width="44" height="${h}" rx="5" fill="${color}"/><text x="${x+22}" y="${y-7}" text-anchor="middle" font-size="11" font-weight="700" fill="#1A1A1A">${b.count}</text><text x="${x+22}" y="195" text-anchor="middle" font-size="10.5" fill="#4F4A44">${b.label}</text>`}).join('')}
+        ${coverBuckets.map((b,i)=>{const h=(145*b.count)/maxCover;const x=38+i*68;const y=176-h;const color=['#7A0F0A','#E0301E','#8A6D1F','#BDB5A9','#2D2A26','#C9A227','#C6007E'][i];return `<rect x="${x}" y="${y}" width="44" height="${h}" rx="5" fill="${color}"/><text x="${x+22}" y="${y-7}" text-anchor="middle" font-size="11" font-weight="700" fill="#1A1A1A">${b.count}</text><text x="${x+22}" y="195" text-anchor="middle" font-size="10.5" fill="#4F4A44">${b.label}</text>`}).join('')}
         <line x1="28" y1="176" x2="510" y2="176" stroke="#D8D2C8"/>
-        <line x1="372" y1="24" x2="372" y2="180" stroke="#D04A02" stroke-dasharray="4 4"/>
-        <text x="378" y="33" font-size="10" fill="#D04A02">8-week target</text>
+        <line x1="372" y1="24" x2="372" y2="180" stroke="#2D2A26" stroke-dasharray="4 4"/>
+        <text x="378" y="33" font-size="10.5" font-weight="700" fill="#2D2A26">8 week target</text>
       </svg>
-      <div class="viz-legend"><span><i style="background:#D04A02"></i>Short cover / risk</span><span><i style="background:#D04A02"></i>Healthy range</span><span><i style="background:#D04A02"></i>Over-cover</span></div>
+      <div class="viz-legend"><span><i style="background:#7A0F0A"></i>Under 1 wk, selling out</span><span><i style="background:#E0301E"></i>1 to 2 wks</span><span><i style="background:#8A6D1F"></i>2 to 4 wks, healthy</span><span><i style="background:#BDB5A9"></i>4 to 6 wks</span><span><i style="background:#2D2A26"></i>6 to 8 wks</span><span><i style="background:#C9A227"></i>8 to 12 wks, slowing</span><span><i style="background:#C6007E"></i>Over 12 wks, markdown</span></div>
     </div>
     <div class="dashboard-card">
       <div class="card-head"><div><h3>Design transformation</h3><div class="card-sub">Cycle and creative capacity targets</div></div><span class="count-note">Workstream 1</span></div>
@@ -6690,20 +6693,20 @@ function renderOverview() {
       </div>
     </div>
     <div class="dashboard-card">
-      <div class="card-head"><div><h3>Decision pipeline</h3><div class="card-sub">Where leadership attention is required now</div></div><span class="count-note">${QUEUE.length} open</span></div>
+      <div class="card-head"><div><h3>Decision pipeline</h3><div class="card-sub">Where leadership attention is required now</div></div><span class="count-note">${QUEUE_TOTAL} open</span></div>
       <div class="dashboard-bar-list">
         ${[
-          ['Critical / immediate', QUEUE.filter(a=>['OUT','BLOCKED','RISK'].includes(a.s)), '#A31A12'],
-          ['Commercial opportunity', QUEUE.filter(a=>['Markdown','Replenish'].includes(a.t)), '#EB8C00'],
+          ['Critical / immediate', QUEUE.filter(a=>['OUT','BLOCKED','RISK'].includes(a.s)), '#7A0F0A'],
+          ['Commercial opportunity', QUEUE.filter(a=>['Markdown','Replenish'].includes(a.t)), '#C6007E'],
           ['Network move', QUEUE.filter(a=>a.t==='Transfer'), '#2D2A26'],
           ['Accepted this session', LOG.filter(a=>a.decision==='Accepted'), '#8A6D1F']
         ].map(([label,items,tone])=>`<div class="dashboard-bar-row"><span>${label}</span><div class="dashboard-bar-track"><div class="dashboard-bar-fill" style="width:${Math.max(5,(items.length/Math.max(1,QUEUE.length))*100).toFixed(1)}%;background:${tone}"></div></div><strong class="dashboard-bar-value">${items.length}</strong></div>`).join('')}
-        <div class="viz-legend" style="margin-top:14px"><span><i style="background:#A31A12"></i>Critical</span><span><i style="background:#EB8C00"></i>Commercial</span><span><i style="background:#2D2A26"></i>Network</span><span><i style="background:#8A6D1F"></i>Accepted</span></div>
+        <div class="viz-legend" style="margin-top:14px"><span><i style="background:#7A0F0A"></i>Critical</span><span><i style="background:#C6007E"></i>Commercial</span><span><i style="background:#2D2A26"></i>Network</span><span><i style="background:#8A6D1F"></i>Accepted</span></div>
       </div>
       <button class="primary-btn" type="button" data-page="review" style="margin-top:18px;width:100%">Open decision review →</button>
     </div>
   </section>
-  <section class="executive-focus"><div><div class="eyebrow">Leadership focus</div><h3>Resolve the highest-value exceptions first.</h3><p>Use the decision review to validate evidence before committing replenishment, transfer, re-cut or markdown actions. Human approval remains the control point.</p></div><button class="primary-btn executive-cta" type="button" data-page="review">Review ${QUEUE.length} open decisions <span>→</span></button></section>
+  <section class="executive-focus"><div><div class="eyebrow">Leadership focus</div><h3>Resolve the highest value exceptions first.</h3><p>Use the decision review to validate evidence before committing replenishment, transfer, recut or markdown actions. Human approval remains the control point.</p></div><button class="primary-btn executive-cta" type="button" data-page="review">Review ${QUEUE.length} open decisions <span>→</span></button></section>
   <section class="packet-grid"><div class="packet-main"><div class="section-head"><div><h3>Priority actions</h3><p>Ranked by expected value so the dashboard leads directly into action.</p></div><span class="count-note">${String(QUEUE.length).padStart(2,'0')} open</span></div>${renderActionDocket(5)}<div class="left-lower">${renderDemandEvidence()}${renderSelectedPosition()}</div></div><aside class="packet-aside">${renderConstraints()}${renderInspector()}</aside></section>`;
 }
 function renderReviewPage() {
@@ -6716,15 +6719,15 @@ function renderReviewPage() {
     <div class="review-standard"><span>Review standard</span><strong>Evidence → commercial logic → human decision</strong><small>Every decision and override is recorded for the next model cycle.</small></div>
   </section>
   <section class="review-kpis">
-    <div><span>Open decisions</span><strong>${QUEUE.length}</strong><small>Ranked queue</small></div>
+    <div><span>Open decisions</span><strong>${QUEUE_TOTAL}</strong><small>Still awaiting a call</small></div>
     <div><span>Value at stake</span><strong>${fmtINR(openValue)}</strong><small>Positive expected value</small></div>
     <div><span>Critical positions</span><strong>${critical}</strong><small>Stockout / supply risk</small></div>
-    <div><span>Accepted this session</span><strong>${accepted}</strong><small>Human-approved actions</small></div>
+    <div><span>Decided this session</span><strong>${LOG.length}</strong><small>${accepted} accepted · ${LOG.length - accepted} rejected</small></div>
   </section>
   <section class="page-section">
-    <div class="section-head"><div><h3>1 · Prioritised decision queue</h3><p>Select a recommendation to open the evidence panel. Start with the highest value, then resolve exceptions.</p></div><span class="count-note">${QUEUE.length} open</span></div>
+    <div class="section-head"><div><h3>1 · Prioritised decision queue</h3><p>Select a recommendation to open the evidence panel. Start with the highest value, then resolve exceptions.</p></div><span class="count-note">${QUEUE_TOTAL} open</span></div>
     <div class="viz-legend review-legend"><span><i class="action-mark red"></i>Critical / immediate</span><span><i class="action-mark amber"></i>Commercial opportunity</span><span><i class="action-mark blue"></i>Network move</span><span><i class="action-mark graphite"></i>Escalation / constraint</span></div>
-    ${renderActionDocket(20)}
+    ${renderActionDocket(20, true)}
   </section>
   <section class="page-section review-evidence">
     <div class="section-head"><div><h3>2 · Evidence before decision</h3><p>The selected position combines demand, inventory, unit economics, supply context and the proposed action.</p></div></div>
@@ -6748,16 +6751,16 @@ function renderStateBoard() {
     group.total += 1;
     if (cell.state !== "HEALTHY") { group.offPlan += 1; group.states[cell.state] = (group.states[cell.state] || 0) + 1; }
   });
-  const rows = STORES.map((store) => `<tr><td><span class="store-name">${escapeHTML(store.name)}</span><span class="store-cluster">${escapeHTML(store.cluster)} · ${store.id}</span></td>${CATS.map((category) => {
+  const rows = STORES.map((store) => `<tr><td><span class="store-name">${escapeHTML(store.name)}</span><span class="store cluster">${escapeHTML(store.cluster)} · ${store.id}</span></td>${CATS.map((category) => {
     const group = map[`${store.id}|${category.id}`];
-    if (!group) return "<td>—</td>";
+    if (!group) return "<td>none</td>";
     const dominant = Object.keys(group.states).sort((a, b) => group.states[b] - group.states[a])[0] || "HEALTHY";
     const quiet = group.offPlan / group.total < 0.3;
     const selected = FILTER?.storeId === store.id && FILTER?.categoryId === category.id;
     const label = `${store.name}, ${category.name}: ${group.offPlan} of ${group.total} positions need action, mostly ${stateLabel(dominant).toLowerCase()}`;
     return `<td><button type="button" class="state-cell ${STATES[dominant].stateClass} ${quiet ? "quiet" : ""} ${selected ? "selected" : ""}" data-cell="${store.id}|${category.id}" title="${escapeHTML(label)}" aria-label="${escapeHTML(label)}">${group.offPlan} <span class="sr-only">${stateLabel(dominant)}</span></button></td>`;
   }).join("")}</tr>`).join("");
-  return `<div class="state-board-wrap"><table class="state-table"><thead><tr><th>Store / cluster</th>${CATS.map((category) => `<th>${escapeHTML(category.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div><div class="legend board-legend">${ORDER.map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)}</span>`).join("")}</div>${FILTER ? `<div class="filter-chip">${escapeHTML(filterLabel())}<button type="button" data-clear-filter aria-label="Clear filter">×</button></div>` : ""}`;
+  return `<div class="state-board-wrap"><table class="state-table"><thead><tr><th>Store / cluster</th>${CATS.map((category) => `<th>${escapeHTML(category.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div><div class="legend board-legend">${LEGEND_ORDER.map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)}</span>`).join("")}</div>${FILTER ? `<div class="filter-chip">${escapeHTML(filterLabel())}<button type="button" data-clear-filter aria-label="Clear filter">×</button></div>` : ""}`;
 }
 
 function renderNetworkPage() {
@@ -6767,7 +6770,7 @@ function renderNetworkPage() {
     return { label: store.name, value: cover, tone: cover < M.ltW + 1 ? "red" : cover > 10 ? "amber" : "green" };
   }).sort((a, b) => a.value - b.value);
   const transferRows = QUEUE.filter((action) => action.t === "Transfer");
-  return `${renderRefreshNotice()}<section class="page-section"><div class="page-section-header"><div><h2 class="page-section-title">Where is the network off plan?</h2><p>Select a store/category cell to filter matching actions and inspect its state.</p></div><span class="mono">${fmtUnits(CELLS.length)} live positions</span></div>${renderStateBoard()}</section><section class="page-grid-2"><div class="rule-panel"><h4>Stock cover by store</h4><p>Target band is ${(M.ltW + 1).toFixed(1)} to 10 weeks.</p>${renderBars(storeRows, (value) => `${value.toFixed(1)} w`)}</div><div class="rule-panel"><h4>Transfer economics</h4><p>Stock is in the wrong place when one store is over-covered and another is below horizon.</p><div class="kv-list"><div class="kv-row"><span>Transfer cost / unit</span><strong>₹${L.tcost}</strong></div><div class="kv-row"><span>Fixed lane cost</span><strong>₹1,500</strong></div><div class="kv-row"><span>Transfers clearing hurdle</span><strong>${transferRows.length}</strong></div><div class="kv-row"><span>Value if approved</span><strong>${fmtINR(transferRows.reduce((sum, action) => sum + action.val, 0))}</strong></div></div></div></section><section class="page-section"><div class="section-head"><div><h3>Transfer recommendations</h3><p>Existing network actions ranked by value.</p></div><span class="count-note">${transferRows.length} open</span></div>${renderActionTable(transferRows)}</section>`;
+  return `${renderRefreshNotice()}<section class="page-section"><div class="page-section-header"><div><h2 class="page-section-title">Where is the network off plan?</h2><p>Select a store/category cell to filter matching actions and inspect its state.</p></div><span class="mono">${fmtUnits(CELLS.length)} live positions</span></div>${renderStateBoard()}</section><section class="page-grid-2"><div class="rule-panel"><h4>Stock cover by store</h4><p>Target band is ${(M.ltW + 1).toFixed(1)} to 10 weeks.</p>${renderBars(storeRows, (value) => `${value.toFixed(1)} w`)}</div><div class="rule-panel"><h4>Transfer economics</h4><p>Stock is in the wrong place when one store is over covered and another is below horizon.</p><div class="kv-list"><div class="kv-row"><span>Transfer cost / unit</span><strong>₹${L.tcost}</strong></div><div class="kv-row"><span>Fixed lane cost</span><strong>₹1,500</strong></div><div class="kv-row"><span>Transfers clearing hurdle</span><strong>${transferRows.length}</strong></div><div class="kv-row"><span>Value if approved</span><strong>${fmtINR(transferRows.reduce((sum, action) => sum + action.val, 0))}</strong></div></div></div></section><section class="page-section"><div class="section-head"><div><h3>Transfer recommendations</h3><p>Existing network actions ranked by value.</p></div><span class="count-note">${transferRows.length} open</span></div>${renderActionTable(transferRows)}</section>`;
 }
 
 function renderActionTable(actions) {
@@ -6783,7 +6786,7 @@ function renderActionTable(actions) {
 function renderMarginPage() {
   const candidates = QUEUE.filter((action) => action.t === "Markdown");
   const cell = candidates[0]?.c || CELLS.slice().sort((a, b) => b.cover - a.cover)[0];
-  return `${renderRefreshNotice()}<section class="page-grid-2"><div class="rule-panel"><h4>Markdown ladder</h4><p>${cell ? `${escapeHTML(cell.sku.name)} at ${escapeHTML(cell.store.name)}` : "No candidate selected"}</p>${cell ? `<div class="chart-frame">${ladderChart(cell)}</div>` : ""}<div class="readout"><strong>Recommendation rationale.</strong> Margin is modelled as demand at each discount less the salvage penalty on remaining stock. The highlighted point is the current modeled peak.</div></div><div class="rule-panel"><h4>Season position</h4><p>What changes when weeks remaining move below six.</p><div class="kv-list"><div class="kv-row"><span>Weeks remaining</span><strong>${L.weeks}</strong></div><div class="kv-row"><span>Positions over-covered</span><strong>${(M.dist.SLOW || 0) + (M.dist.TERMINAL || 0)}</strong></div><div class="kv-row"><span>Markdown exposure</span><strong>${fmtINR(M.mdExp)}</strong></div><div class="kv-row"><span>Recoverable by markdown</span><strong>${fmtINR(candidates.reduce((sum, action) => sum + action.val, 0))}</strong></div></div></div></section><section class="page-section"><div class="section-head"><div><h3>Markdown candidates</h3><p>Open positions where the modeled ladder exceeds the current discount.</p></div><span class="count-note">${candidates.length} open</span></div>${renderActionDocket(10)}</section>`;
+  return `${renderRefreshNotice()}<section class="page-grid-2"><div class="rule-panel"><h4>Markdown ladder</h4><p>${cell ? `${escapeHTML(cell.sku.name)} at ${escapeHTML(cell.store.name)}` : "No candidate selected"}</p>${cell ? `<div class="chart-frame">${ladderChart(cell)}</div>` : ""}<div class="readout"><strong>Recommendation rationale.</strong> Margin is modelled as demand at each discount less the salvage penalty on remaining stock. The highlighted point is the current modeled peak.</div></div><div class="rule-panel"><h4>Season position</h4><p>What changes when weeks remaining move below six.</p><div class="kv-list"><div class="kv-row"><span>Weeks remaining</span><strong>${L.weeks}</strong></div><div class="kv-row"><span>Positions over covered</span><strong>${(M.dist.SLOW || 0) + (M.dist.TERMINAL || 0)}</strong></div><div class="kv-row"><span>Markdown exposure</span><strong>${fmtINR(M.mdExp)}</strong></div><div class="kv-row"><span>Recoverable by markdown</span><strong>${fmtINR(candidates.reduce((sum, action) => sum + action.val, 0))}</strong></div></div></div></section><section class="page-section"><div class="section-head"><div><h3>Markdown candidates</h3><p>Open positions where the modeled ladder exceeds the current discount.</p></div><span class="count-note">${candidates.length} open</span></div>${renderActionDocket(10)}</section>`;
 }
 
 function renderSupplyPage() {
@@ -6937,6 +6940,9 @@ function wireEvents() {
     render();
   }));
   document.querySelectorAll("[data-cancel-reject]").forEach((button) => button.addEventListener("click", () => { REJECT_CONFIRM = false; render(); }));
+  document.querySelectorAll("[data-docket-more]").forEach((button) => button.addEventListener("click", () => { DOCKET_SHOWN += 20; render({ preserveScroll: true }); }));
+  document.querySelectorAll("[data-docket-all]").forEach((button) => button.addEventListener("click", () => { DOCKET_SHOWN = QUEUE.length; render({ preserveScroll: true }); }));
+  document.querySelectorAll("[data-docket-reset]").forEach((button) => button.addEventListener("click", () => { DOCKET_SHOWN = 20; render({ preserveScroll: true }); }));
   const queueAction = (key) => QUEUE.find((item) => actionKey(item) === key);
   document.querySelectorAll("[data-queue-accept]").forEach((button) => button.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -6988,8 +6994,7 @@ async function loadData() {
     } else {
       try {
         await buildData();
-        // fetch real demand history in parallel with data load — non-blocking,
-        // falls back gracefully if the endpoint is unavailable
+        // fetch real demand history in parallel — non-blocking, graceful fallback
         fetch(`${API_BASE}/api/demand-history?t=${Date.now()}`, { cache: "no-store" })
           .then((r) => r.ok ? r.json() : null)
           .then((data) => { if (data && Array.isArray(data.history)) { DEMAND_HISTORY = data.history; render(); } })
@@ -7132,7 +7137,7 @@ function donut(segments, centre, caption) {
     return arc;
   }).join("");
   return `<svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" role="img" aria-label="${escapeHTML(caption)}">
-    <circle cx="${size / 2}" cy="${size / 2}" r="${radius}" fill="none" stroke="#EFEAE1" stroke-width="${stroke}"/>${arcs}
+    <circle cx="${size / 2}" cy="${size / 2}" r="${radius}" fill="none" stroke="#F7F3ED" stroke-width="${stroke}"/>${arcs}<circle cx="${size / 2}" cy="${size / 2}" r="${radius + stroke / 2}" fill="none" stroke="#D8D2C8" stroke-width="1"/><circle cx="${size / 2}" cy="${size / 2}" r="${radius - stroke / 2}" fill="none" stroke="#D8D2C8" stroke-width="1"/>
     <text x="${size / 2}" y="${size / 2 - 2}" text-anchor="middle" font-size="21" font-weight="700" fill="#1A1A1A">${escapeHTML(centre)}</text>
     <text x="${size / 2}" y="${size / 2 + 15}" text-anchor="middle" font-size="10.5" fill="#4F4A44">${escapeHTML(caption)}</text>
   </svg>`;
@@ -7151,10 +7156,10 @@ function histogram(buckets) {
       const x = left + index * slot + 4;
       const y = height - bottom - barHeight;
       return `<rect x="${x}" y="${y}" width="${slot - 8}" height="${barHeight}" fill="${bucket.color}" rx="2"><title>${escapeHTML(bucket.label)}: ${bucket.count}</title></rect>
-      <text x="${x + (slot - 8) / 2}" y="${y - 4}" text-anchor="middle" font-size="9.5" fill="#D04A02">${bucket.count}</text>
-      <text x="${x + (slot - 8) / 2}" y="${height - 9}" text-anchor="middle" font-size="9.5" fill="#D04A02">${escapeHTML(bucket.label)}</text>`;
+      <text x="${x + (slot - 8) / 2}" y="${y - 4}" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1A1A1A">${bucket.count}</text>
+      <text x="${x + (slot - 8) / 2}" y="${height - 9}" text-anchor="middle" font-size="10.5" fill="#4F4A44">${escapeHTML(bucket.label)}</text>`;
     }).join("")}
-    <line x1="${left}" y1="${height - bottom}" x2="${width - 6}" y2="${height - bottom}" stroke="#FFFFFF"/>
+    <line x1="${left}" y1="${height - bottom}" x2="${width - 6}" y2="${height - bottom}" stroke="#D8D2C8"/>
   </svg>`;
 }
 
@@ -7169,18 +7174,18 @@ function sparkline(values, floor) {
   const x = (index) => scale(index, 0, values.length - 1, left, width - 10);
   const y = (value) => scale(value, min, max, height - bottom, top);
   return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Model accuracy by week against the rollback floor">
-    <line x1="${left}" y1="${y(floor)}" x2="${width - 10}" y2="${y(floor)}" stroke="#D04A02" stroke-dasharray="4 4"/>
-    <text x="${width - 12}" y="${y(floor) - 5}" text-anchor="end" font-size="9.5" fill="#D04A02">rollback floor ${floor}%</text>
-    <path d="${linePath(values.map((value, index) => [x(index), y(value)]))}" fill="none" stroke="#D04A02" stroke-width="2"/>
-    ${values.map((value, index) => `<circle cx="${x(index)}" cy="${y(value)}" r="2.5" fill="#D04A02"><title>Week ${index + 1}: ${value}%</title></circle>`).join("")}
-    <text x="${left}" y="${height - 6}" font-size="9.5" fill="#D04A02">wk 21</text>
-    <text x="${width - 10}" y="${height - 6}" text-anchor="end" font-size="9.5" fill="#D04A02">wk 32</text>
+    <line x1="${left}" y1="${y(floor)}" x2="${width - 10}" y2="${y(floor)}" stroke="#7A0F0A" stroke-dasharray="4 4"/>
+    <text x="${width - 12}" y="${y(floor) - 5}" text-anchor="end" font-size="10.5" font-weight="700" fill="#7A0F0A">rollback floor ${floor}%</text>
+    <path d="${linePath(values.map((value, index) => [x(index), y(value)]))}" fill="none" stroke="#2D2A26" stroke-width="2.4"/>
+    ${values.map((value, index) => `<circle cx="${x(index)}" cy="${y(value)}" r="2.8" fill="#2D2A26"><title>Week ${index + 1}: ${value}%</title></circle>`).join("")}
+    <text x="${left}" y="${height - 6}" font-size="10.5" fill="#4F4A44">wk 21</text>
+    <text x="${width - 10}" y="${height - 6}" text-anchor="end" font-size="10.5" fill="#4F4A44">wk 32</text>
   </svg>`;
 }
 
 function miniDocket(actions, limit = 6) {
   if (!actions.length) return `<div class="empty-state"><strong>Nothing open here.</strong>No action clears the hurdle under these assumptions.</div>`;
-  return `<div class="ws-table-wrap"><table class="ws-table"><thead><tr><th>Item</th><th>Store</th><th>Do</th><th>Value</th></tr></thead><tbody>${actions.slice(0, limit).map((action) => `<tr class="docket-row" data-open-decision="${escapeHTML(actionKey(action))}"><td><strong>${escapeHTML(action.c.sku.id)}</strong></td><td>${escapeHTML(action.c.store.name)}</td><td>${action.t === "Markdown" ? `${action.t} to ${action.depth}%` : `${action.t} ${fmtUnits(action.qty)} u`}</td><td class="value">${action.val > 0 ? fmtINR(action.val) : "—"}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="ws-table-wrap"><table class="ws-table"><thead><tr><th>Item</th><th>Store</th><th>Do</th><th>Value</th></tr></thead><tbody>${actions.slice(0, limit).map((action) => `<tr class="docket-row" data-open-decision="${escapeHTML(actionKey(action))}"><td><strong>${escapeHTML(action.c.sku.id)}</strong></td><td>${escapeHTML(action.c.store.name)}</td><td>${action.t === "Markdown" ? `${action.t} to ${action.depth}%` : `${action.t} ${fmtUnits(action.qty)} u`}</td><td class="value">${action.val > 0 ? fmtINR(action.val) : "none"}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 /* ------------------------------------------------------- 1 · board ------ */
@@ -7195,9 +7200,9 @@ function renderStateBoard() {
     group.total += 1;
     if (state !== "HEALTHY") { group.offPlan += 1; group.states[state] = (group.states[state] || 0) + 1; }
   });
-  const rows = STORES.map((store) => `<tr><td><span class="store-name">${escapeHTML(store.name)}</span><span class="store-cluster">${escapeHTML(store.cluster)} · ${store.id}</span></td>${CATS.map((category) => {
+  const rows = STORES.map((store) => `<tr><td><span class="store-name">${escapeHTML(store.name)}</span><span class="store cluster">${escapeHTML(store.cluster)} · ${store.id}</span></td>${CATS.map((category) => {
     const group = map[`${store.id}|${category.id}`];
-    if (!group) return "<td>—</td>";
+    if (!group) return "<td>none</td>";
     const dominant = Object.keys(group.states).sort((a, b) => group.states[b] - group.states[a])[0] || "HEALTHY";
     const quiet = group.offPlan / group.total < 0.3;
     const selected = FILTER?.storeId === store.id && FILTER?.categoryId === category.id;
@@ -7205,7 +7210,7 @@ function renderStateBoard() {
     return `<td><button type="button" class="state-cell ${STATES[dominant].stateClass} ${quiet ? "quiet" : ""} ${selected ? "selected" : ""}" data-cell="${store.id}|${category.id}" title="${escapeHTML(label)}" aria-label="${escapeHTML(label)}">${group.offPlan}</button></td>`;
   }).join("")}</tr>`).join("");
   return `<div class="state-board-wrap"><table class="state-table"><thead><tr><th>Store</th>${CATS.map((category) => `<th>${escapeHTML(category.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>
-  <div class="legend board-legend">${ORDER.map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)}</span>`).join("")}</div>
+  <div class="legend board-legend">${LEGEND_ORDER.map((state) => `<span class="legend-item"><i class="legend-dot" style="background:${stateColor(state)}"></i>${stateLabel(state)}</span>`).join("")}</div>
   ${FILTER ? `<div class="filter-chip">${escapeHTML(filterLabel())}<button type="button" data-clear-filter aria-label="Clear filter">×</button></div>` : ""}`;
 }
 
@@ -7215,13 +7220,13 @@ function renderBoardPage() {
   const forecast = projection();
   const rate = recoveryRate();
   const buckets = [
-    { label: "<1", test: (cover) => cover < 1, color: "#D04A02" },
-    { label: "1-2", test: (cover) => cover < 2, color: "#D04A02" },
-    { label: "2-4", test: (cover) => cover < 4, color: "#D04A02" },
-    { label: "4-6", test: (cover) => cover < 6, color: "#D04A02" },
-    { label: "6-8", test: (cover) => cover < 8, color: "#D04A02" },
-    { label: "8-12", test: (cover) => cover < 12, color: "#D04A02" },
-    { label: "12+", test: () => true, color: "#D04A02" }
+    { label: "<1", test: (cover) => cover < 1, color: "#7A0F0A" },
+    { label: "1-2", test: (cover) => cover < 2, color: "#E0301E" },
+    { label: "2-4", test: (cover) => cover < 4, color: "#8A6D1F" },
+    { label: "4-6", test: (cover) => cover < 6, color: "#BDB5A9" },
+    { label: "6-8", test: (cover) => cover < 8, color: "#2D2A26" },
+    { label: "8-12", test: (cover) => cover < 12, color: "#C9A227" },
+    { label: "12+", test: () => true, color: "#C6007E" }
   ].map((bucket) => ({ ...bucket, count: 0 }));
   CELLS.forEach((cell) => {
     const bucket = buckets.find((item) => item.test(cell.cover));
@@ -7251,7 +7256,7 @@ function renderBoardPage() {
       <div class="split-legend">${segments.filter((segment) => segment.value).map((segment) => `<span><i style="background:${segment.color}"></i>${escapeHTML(segment.label)} ${segment.value}</span>`).join("")}</div>
     </div>
     <div class="rule-panel"><h4>Weeks of cover</h4><p>Positions per bucket. The right tail is the overstock.</p>${histogram(buckets)}
-      <div class="viz-legend"><span><i style="background:#D04A02"></i>Under 1 wk</span><span><i style="background:#D04A02"></i>1 to 2 wks</span><span><i style="background:#D04A02"></i>2 to 6 wks, healthy</span><span><i style="background:#D04A02"></i>6 to 8 wks</span><span><i style="background:#D04A02"></i>8 to 12 wks</span><span><i style="background:#D04A02"></i>Over 12 wks</span></div>
+      <div class="viz-legend"><span><i style="background:#7A0F0A"></i>Under 1 wk</span><span><i style="background:#E0301E"></i>1 to 2 wks</span><span><i style="background:#8A6D1F"></i>2 to 4 wks</span><span><i style="background:#BDB5A9"></i>4 to 6 wks</span><span><i style="background:#2D2A26"></i>6 to 8 wks</span><span><i style="background:#C9A227"></i>8 to 12 wks</span><span><i style="background:#C6007E"></i>Over 12 wks, markdown candidates</span></div>
       <div class="viz-caption"><strong>How to read it.</strong> Each bar counts positions, not units. Everything right of eight weeks is stock that will not clear at full price.</div>
       <div class="readout"><strong>${buckets.slice(5).reduce((sum, bucket) => sum + bucket.count, 0)} positions hold 8 weeks or more.</strong> That stock is committed and will only clear on discount.</div>
     </div>
@@ -7272,9 +7277,9 @@ function renderBoardPage() {
 function renderDemandPage() {
   const byCategory = CATS.map((category) => ({ label: category.name, value: CELLS.filter((cell) => cell.sku.cat.id === category.id).reduce((sum, cell) => sum + cell.fc, 0), tone: "blue" })).sort((a, b) => b.value - a.value);
   const accuracy = [
-    { label: `This model (${MODEL.accuracy}%)`, value: MODEL.accuracy, tone: "green" },
-    { label: `Naive 4-week average (${MODEL.naive}%)`, value: MODEL.naive, tone: "blue" },
-    { label: `Current planning process (${MODEL.baseline}%, case)`, value: MODEL.baseline, tone: "graphite" }
+    { label: `This model (${MODEL.accuracy}%)`, value: MODEL.accuracy, color: "#8A6D1F" },
+    { label: `Repeat last week benchmark (${MODEL.naive}%)`, value: MODEL.naive, color: "#2D2A26" },
+    { label: `Current planning process (${MODEL.baseline}%, case)`, value: MODEL.baseline, color: "#BDB5A9" }
   ];
   return `${renderRefreshNotice()}
   <section class="page-section">
@@ -7282,11 +7287,11 @@ function renderDemandPage() {
     <div class="chart-frame">${demandChart()}<div class="chart-note"><span><i class="chart-key"></i>Actual</span><span><i class="chart-key forecast"></i>Forecast</span></div></div>
   </section>
   <section class="page-grid-3">
-    <div class="rule-panel"><h4>Accuracy</h4><p>SKU-store-week, 4-week horizon.</p>${renderBars(accuracy, (value) => `${value.toFixed(1)}%`)}<div class="viz-legend"><span><i style="background:#D04A02"></i>This model</span><span><i style="background:#D04A02"></i>Repeat-last-week benchmark</span><span><i style="background:#D04A02"></i>Current planning process (case)</span></div>
+    <div class="rule-panel"><h4>Accuracy</h4><p>SKU store week, 4 week horizon.</p>${renderBars(accuracy, (value) => `${value.toFixed(1)}%`)}<div class="viz-legend"><span><i style="background:#8A6D1F"></i>This model</span><span><i style="background:#2D2A26"></i>Repeat last week benchmark</span><span><i style="background:#BDB5A9"></i>Current planning process, per the case</span></div>
       <div class="viz-caption"><strong>+8.2 points on the current process.</strong> Trained on ${MODEL.observations} observations, tested out of sample.</div></div>
     <div class="rule-panel"><h4>What the model uses</h4><p>Top 10 features by contribution.</p>${renderBars(MODEL.features.map((feature) => ({ label: feature.label, value: feature.value * 100, tone: "blue" })), (value) => `${value.toFixed(0)}%`)}</div>
-    <div class="rule-panel"><h4>Accuracy since go-live</h4><p>Weekly, with the rollback trigger.</p>${sparkline(MODEL.drift, MODEL.floor)}
-      <div class="viz-legend"><span><i style="background:#D04A02"></i>Weekly accuracy</span><span><i style="background:#D04A02"></i>Rollback floor, ${MODEL.floor}%</span></div><div class="kv-list">
+    <div class="rule-panel"><h4>Accuracy since go live</h4><p>Weekly, with the rollback trigger.</p>${sparkline(MODEL.drift, MODEL.floor)}
+      <div class="viz-legend"><span><i style="background:#2D2A26"></i>Weekly accuracy</span><span><i style="background:#7A0F0A"></i>Rollback floor, ${MODEL.floor}%</span></div><div class="kv-list">
       <div class="kv-row"><span>Retrain</span><strong>Fortnightly</strong></div>
       <div class="kv-row"><span>Rollback trigger</span><strong>Two weeks under ${MODEL.floor}%</strong></div>
       <div class="kv-row"><span>Owner</span><strong>AI CoE, demand science</strong></div>
@@ -7322,18 +7327,18 @@ function transferFlow(transfers) {
     const y1 = yOf(donors, action.from?.store.name);
     const y2 = yOf(takers, action.c.store.name);
     const stroke = 2 + (action.qty / maxQty) * 9;
-    return `<path d="M${leftX} ${y1} C${(leftX + rightX) / 2} ${y1}, ${(leftX + rightX) / 2} ${y2}, ${rightX} ${y2}" fill="none" stroke="#D04A02" stroke-opacity="0.4" stroke-width="${stroke.toFixed(1)}" stroke-linecap="round"><title>${escapeHTML(action.c.sku.id)}: ${fmtUnits(action.qty)} u</title></path>`;
+    return `<path d="M${leftX} ${y1} C${(leftX + rightX) / 2} ${y1}, ${(leftX + rightX) / 2} ${y2}, ${rightX} ${y2}" fill="none" stroke="#2D2A26" stroke-opacity="0.38" stroke-width="${stroke.toFixed(1)}" stroke-linecap="round"><title>${escapeHTML(action.c.sku.id)}: ${fmtUnits(action.qty)} u</title></path>`;
   }).join("");
   const node = (name, x, anchor, tone) => `<circle cx="${x}" cy="${yOf(anchor === "end" ? donors : takers, name)}" r="5" fill="${tone}"/><text x="${x + (anchor === "end" ? -12 : 12)}" y="${yOf(anchor === "end" ? donors : takers, name) + 4}" text-anchor="${anchor === "end" ? "end" : "start"}" font-size="11" fill="#D04A02">${escapeHTML(name)}</text>`;
-  return `<div class="viz-card"><h4>Where the stock should move</h4><p>Line weight is units. Left is over-covered, right is short.</p>
+  return `<div class="viz-card"><h4>Where the stock should move</h4><p>Line weight is units. Left is over covered, right is short.</p>
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Proposed stock transfers between stores">
       <text x="${leftX}" y="18" text-anchor="end" font-size="10" fill="#D04A02">HOLDING TOO MUCH</text>
       <text x="${rightX}" y="18" font-size="10" fill="#D04A02">SHORT</text>
       ${links}
-      ${donors.map((name) => node(name, leftX, "end", "#D04A02")).join("")}
-      ${takers.map((name) => node(name, rightX, "start", "#D04A02")).join("")}
+      ${donors.map((name) => node(name, leftX, "end", "#C9A227")).join("")}
+      ${takers.map((name) => node(name, rightX, "start", "#C6007E")).join("")}
     </svg>
-    <div class="viz-legend"><span><i style="background:#D04A02"></i>Donor store, over-covered</span><span><i style="background:#D04A02"></i>Recipient store, short</span><span><i style="background:#D04A02"></i>Proposed move, thicker means more units</span></div>
+    <div class="viz-legend"><span><i style="background:#C9A227"></i>Donor store, over covered</span><span><i style="background:#C6007E"></i>Recipient store, short</span><span><i style="background:#2D2A26"></i>Proposed move, thicker means more units</span></div>
     <div class="viz-caption"><strong>How to read it.</strong> No stock is bought here. Every line is inventory the company already owns, moving to where it will sell.</div>
   </div>`;
 }
@@ -7364,7 +7369,7 @@ function renderNetworkPage() {
   </section>
   <section class="page-section">
     <div class="section-head"><div><h3>Move stock before buying more</h3><p>Ranked by margin recovered per rupee of transfer cost.</p></div><span class="count-note">${transfers.length} clear the hurdle</span></div>
-    ${rows.length ? `<div class="ws-table-wrap"><table class="ws-table"><thead><tr><th>SKU</th><th>From</th><th>To</th><th>Units</th><th>Cost</th><th>Margin recovered</th><th>Per ₹1</th></tr></thead><tbody>${rows.map(({ action, cost, perRupee }) => `<tr class="docket-row" data-open-decision="${escapeHTML(actionKey(action))}"><td><strong>${escapeHTML(action.c.sku.id)}</strong></td><td>${escapeHTML(action.from?.store.name || "—")}</td><td>${escapeHTML(action.c.store.name)}</td><td>${fmtUnits(action.qty)}</td><td>${fmtINR(cost)}</td><td class="value">${fmtINR(action.val)}</td><td><strong>₹${perRupee.toFixed(1)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<div class="empty-state"><strong>No transfer clears the hurdle.</strong>At ₹${L.tcost} per unit the move costs more than it recovers.</div>`}
+    ${rows.length ? `<div class="ws-table-wrap"><table class="ws-table"><thead><tr><th>SKU</th><th>From</th><th>To</th><th>Units</th><th>Cost</th><th>Margin recovered</th><th>Per ₹1</th></tr></thead><tbody>${rows.map(({ action, cost, perRupee }) => `<tr class="docket-row" data-open-decision="${escapeHTML(actionKey(action))}"><td><strong>${escapeHTML(action.c.sku.id)}</strong></td><td>${escapeHTML(action.from?.store.name || "none")}</td><td>${escapeHTML(action.c.store.name)}</td><td>${fmtUnits(action.qty)}</td><td>${fmtINR(cost)}</td><td class="value">${fmtINR(action.val)}</td><td><strong>₹${perRupee.toFixed(1)}</strong></td></tr>`).join("")}</tbody></table></div>` : `<div class="empty-state"><strong>No transfer clears the hurdle.</strong>At ₹${L.tcost} per unit the move costs more than it recovers.</div>`}
   </section>
   <section class="page-grid-2">
     <div class="rule-panel"><h4>Transfer economics</h4><p>The hurdle every move has to clear.</p><div class="kv-list">
@@ -7399,11 +7404,11 @@ function renderMarginPage() {
   return `${renderRefreshNotice()}
   <section class="page-grid-2">
     <div class="rule-panel"><h4>Margin at risk by category</h4><p>Unmet demand plus markdown exposure. Start at the top.</p>${renderBars(byCategory, fmtINR)}</div>
-    <div class="rule-panel"><h4>Sell-through by category</h4><p>Sold against received. Plan is ${Math.round(M.planST * 100)}%.</p>${renderBars(sellThrough, (value) => `${value.toFixed(0)}%`)}</div>
+    <div class="rule-panel"><h4>Sell through by category</h4><p>Sold against received. Plan is ${Math.round(M.planST * 100)}%.</p>${renderBars(sellThrough, (value) => `${value.toFixed(0)}%`)}</div>
   </section>
   <section class="page-grid-2">
     <div class="rule-panel"><h4>How deep to go</h4><p>${cell ? `${escapeHTML(cell.sku.name)} · ${escapeHTML(cell.store.name)}` : "No candidate"}</p>${cell ? `<div class="chart-frame">${ladderChart(cell)}</div>` : ""}
-      <div class="viz-legend"><span><i style="background:#D04A02"></i>Modelled margin at each discount depth</span><span><i style="background:#C6007E;border-radius:50%"></i>Recommended depth</span><span><i style="background:#D04A02;width:3px;height:12px"></i>40% guardrail, human signature beyond</span></div>
+      <div class="viz-legend"><span><i style="background:#C9A227"></i>Modelled margin at each discount depth</span><span><i style="background:#C6007E;border-radius:50%"></i>Recommended depth</span><span><i style="background:#2D2A26;border-radius:50%"></i>Other depths tested</span><span><i style="background:#7A0F0A;width:3px;height:12px"></i>40% guardrail, human signature beyond</span></div>
       <div class="readout"><strong>Margin peaks, then falls.</strong> Modelled as demand at each depth less the salvage loss on what is left. Anything past 40% needs a human signature.</div>
     </div>
     <div class="rule-panel"><h4>Season position</h4><p>What changes as weeks run out.</p><div class="kv-list">
@@ -7429,7 +7434,7 @@ function renderSupplyPage() {
     const lead = Math.round(L.lead * (1 + (1 - supplier.rel) * 0.9));
     return { supplier, need, served, capacity, lead, use: Math.min(1, served / Math.max(1, capacity)) };
   });
-  const recuts = QUEUE.filter((action) => action.t === "Re-cut");
+  const recuts = QUEUE.filter((action) => action.t === "Recut");
   const blocked = QUEUE.filter((action) => action.t === "Escalate");
 
   const peak = Math.max(...rows.map((row) => Math.max(row.capacity, row.served + row.need)), 1);
@@ -7475,8 +7480,8 @@ function renderSupplyPage() {
       <div class="section-head" style="margin-top:20px"><div><h3>Cannot be filled</h3><p>Substitute or accept the loss.</p></div><span class="count-note">${blocked.length}</span></div>
       ${miniDocket(blocked, 4)}
     </div>
-    <div class="rule-panel"><h4>Worth re-cutting</h4><p>Selling ahead of plan with capacity still free.</p>${miniDocket(recuts, 6)}
-      <div class="readout"><strong>Re-cut beats a bigger first buy.</strong> A short first order plus one in-season cut carries less markdown risk than committing everything pre-season.</div>
+    <div class="rule-panel"><h4>Worth recutting</h4><p>Selling ahead of plan with capacity still free.</p>${miniDocket(recuts, 6)}
+      <div class="readout"><strong>Recut beats a bigger first buy.</strong> A short first order plus one in season cut carries less markdown risk than committing everything pre season.</div>
     </div>
   </section>`;
 }
@@ -7488,7 +7493,7 @@ function renderDecisionsPage() {
   const rejected = LOG.filter((entry) => entry.decision === "Rejected").length;
   const stillAtRisk = Math.max(0, M.margRisk + M.mdExp - RECOVERED);
   const total = Math.max(1, RECOVERED + stillAtRisk);
-  const types = ["Replenish", "Transfer", "Re-cut", "Markdown", "Escalate"];
+  const types = ["Replenish", "Transfer", "Recut", "Markdown", "Escalate"];
   return `${renderRefreshNotice()}
   <section class="page-section">
     <div class="viz-card"><h4>How a decision moves</h4><p>The model ranks. The planner decides. The reason is recorded either way.</p>
@@ -7506,7 +7511,7 @@ function renderDecisionsPage() {
     <div class="viz-legend"><span><i style="background:var(--green)"></i>Margin recovered by accepted decisions</span><span><i style="background:var(--rule)"></i>Still exposed, awaiting a call</span></div>
   </section>
   <section class="page-section">
-    <div class="section-head"><div><h3>Queue: what needs a call</h3><p>Ranked by value. Select a row, read the evidence on the right, then accept or reject.</p></div><span class="count-note">${QUEUE.length} open</span></div>
+    <div class="section-head"><div><h3>Queue: what needs a call</h3><p>Ranked by value. Select a row, read the evidence on the right, then accept or reject.</p></div><span class="count-note">${QUEUE_TOTAL} open</span></div>
     <div class="viz-legend" style="margin:0 0 12px">${types.map((type) => `<span><i class="action-mark ${ACTION_MARKS[type] || "graphite"}" style="width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px"></i>${type}</span>`).join("")}</div>
     ${renderActionDocket(20)}
   </section>
@@ -7516,7 +7521,7 @@ function renderDecisionsPage() {
   </section>
   <section class="page-grid-2">
     <div class="rule-panel"><h4>Do planners trust it?</h4><p>Acceptance by action type, last 90 days.</p>
-      <div class="ws-table-wrap" style="border:none;box-shadow:none"><table class="ws-table"><thead><tr><th>Type</th><th>Raised</th><th>Accepted</th><th>Value taken</th></tr></thead><tbody>${DECISION_HISTORY.map((row) => `<tr><td><span class="action-name"><i class="action-mark ${ACTION_MARKS[row.type] || "graphite"}"></i>${row.type}</span></td><td>${row.raised}</td><td><strong>${Math.round(row.accepted * 100)}%</strong><div class="alloc-track"><span class="alloc-fill" style="width:${Math.round(row.accepted * 100)}%"></span></div></td><td>${row.value ? `₹${row.value.toFixed(1)} Cr` : "—"}</td></tr>`).join("")}</tbody></table></div>
+      <div class="ws-table-wrap" style="border:none;box-shadow:none"><table class="ws-table"><thead><tr><th>Type</th><th>Raised</th><th>Accepted</th><th>Value taken</th></tr></thead><tbody>${DECISION_HISTORY.map((row) => `<tr><td><span class="action-name"><i class="action-mark ${ACTION_MARKS[row.type] || "graphite"}"></i>${row.type}</span></td><td>${row.raised}</td><td><strong>${Math.round(row.accepted * 100)}%</strong><div class="alloc-track"><span class="alloc-fill" style="width:${Math.round(row.accepted * 100)}%"></span></div></td><td>${row.value ? `₹${row.value.toFixed(1)} Cr` : "none"}</td></tr>`).join("")}</tbody></table></div>
       <div class="readout"><strong>Markdown is trusted least, at 54%.</strong> That is the signal to look at, not to suppress: rejections carry reason codes and go back into the next retrain.</div>
     </div>
     ${renderDecisionRecord()}
@@ -7588,14 +7593,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   .human-gate { background: #F0EEFF !important; border-color: #D9D3FA !important; color: #9C3600 !important; }
 
   /* Charts: violet remains the dominant series, with restrained supporting accents. */
-  .bar-fill, .bar-fill.red, .bar-fill.amber, .bar-fill.green, .bar-fill.blue, .bar-fill.graphite {
-    background: linear-gradient(90deg, #D04A02, #EB8C00) !important;
-  }
-  .bar-fill.green { background: linear-gradient(90deg, #8A6D1F, #73B79B) !important; }
-  .bar-fill.amber { background: linear-gradient(90deg, #EB8C00, #E5BA79) !important; }
-  .bar-fill.blue { background: linear-gradient(90deg, #46423C, #7899BF) !important; }
-  .bar-fill.red { background: linear-gradient(90deg, #E0301E, #DD8AA0) !important; }
-  .alloc-fill { background: linear-gradient(90deg, #D04A02, #EB8C00) !important; }
+  /* removed: this gradient overrode every per-series bar colour */
+
+
+
+
+  .alloc-fill { background: #D04A02 !important; }
 
   .action-mark.red { background: #E0301E !important; }
   .action-mark.amber { background: #EB8C00 !important; }
@@ -7854,7 +7857,8 @@ td.value, td.quantity, .value, .cap-figure strong { font-family: var(--font-mono
 .state-pill.state-OUT { border-color: #7A0F0A; color: #7A0F0A; background: #F8E9E7; }
 .state-pill.state-BLOCKED { border-color: #2D2A26; color: #2D2A26; background: #EDEAE6; }
 .state-pill.state-RISK { border-color: var(--pwc-brick); color: var(--pwc-brick); background: #FDECEA; }
-.state-pill.state-IMBAL, .state-pill.state-TERMINAL { border-color: var(--pwc-burnt); color: var(--pwc-burnt); background: #FBEFE7; }
+.state-pill.state-IMBAL { border-color: #A8871B; color: #6E570D; background: #FAF2D9; }
+.state-pill.state-TERMINAL { border-color: #8A1E52; color: #8A1E52; background: #FBE9F1; }
 .state-pill.state-SLOW { border-color: #C08A20; color: #6E4E05; background: #FBF0D9; }
 .state-pill.state-BREAKOUT { border-color: var(--pwc-magenta); color: var(--pwc-magenta); background: #FDECF5; }
 
@@ -7894,8 +7898,8 @@ td.value, td.quantity, .value, .cap-figure strong { font-family: var(--font-mono
 .state-cell.state-BLOCKED, .board-cell.state-BLOCKED { background: #2D2A26 !important; color: #FFFFFF !important; }
 .state-cell.state-RISK, .board-cell.state-RISK { background: #E0301E !important; color: #FFFFFF !important; }
 .state-cell.state-TERMINAL, .board-cell.state-TERMINAL { background: #9C3600 !important; color: #FFFFFF !important; }
-.state-cell.state-IMBAL, .board-cell.state-IMBAL { background: #D04A02 !important; color: #FFFFFF !important; }
-.state-cell.state-SLOW, .board-cell.state-SLOW { background: #E8B34A !important; color: #1A1A1A !important; }
+.state-cell.state-IMBAL, .board-cell.state-IMBAL { background: #C9A227 !important; color: #1A1A1A !important; }
+.state-cell.state-SLOW, .board-cell.state-SLOW { background: #F2D492 !important; color: #1A1A1A !important; }
 .state-cell.state-BREAKOUT, .board-cell.state-BREAKOUT { background: #C6007E !important; color: #FFFFFF !important; }
 .state-cell.state-HEALTHY, .board-cell.state-HEALTHY { background: #BDB5A9 !important; color: #1A1A1A !important; }
 .state-cell.quiet { color: #1A1A1A !important; opacity: 0.45; }
@@ -7993,11 +7997,11 @@ input[type="range"] { accent-color: var(--pwc-orange); width: 100%; }
 .primary-btn.rejected { background: var(--pwc-deepred) !important; border-color: var(--pwc-deepred) !important; }
 .secondary-btn { background: var(--surface) !important; border: 1px solid var(--rule) !important; color: var(--muted) !important; border-radius: var(--radius-control) !important; }
 .secondary-btn:hover { border-color: var(--pwc-brick) !important; color: var(--pwc-brick) !important; }
-.bar-fill.red { background: var(--pwc-brick) !important; }
-.bar-fill.amber { background: var(--pwc-amber) !important; }
-.bar-fill.green { background: var(--pwc-positive) !important; }
-.bar-fill.blue { background: var(--blue) !important; }
-.bar-fill.graphite { background: var(--graphite) !important; }
+
+
+
+
+
 .alloc-fill, .rank-fill.fit, .cyc-fill, .stage-bar-fill.after, .split-seg:first-child { background: var(--pwc-orange) !important; }
 
 /* --------------------------------------------------------- responsive -- */
@@ -8394,6 +8398,440 @@ svg text[font-weight="700"] { font-weight: 700; }
   .dq-rank { display: none; }
   .dq-actions { grid-column: 1 / -1; justify-content: flex-start; }
 }
+
+
+
+/* ==========================================================================
+   ONE PADDING SYSTEM · every exhibit keeps the same breathing room inside
+   its own border, whatever its size. Nothing touches an edge.
+   ========================================================================== */
+
+.evidence-sheet, .record, .inspector, .dashboard-card, .rule-panel, .viz-card,
+.ws-gate, .cap-chart, .brief-sheet, .wave-card, .trend-card, .distribution,
+.scenario-rail, .ws-rail, .empty-state, .readout, .constraint-list {
+  box-sizing: border-box;
+  padding: 20px 22px !important;
+}
+
+/* shells whose rows carry their own padding stay flush, rows get the inset */
+.ws-table-wrap, .stage-flow, .loop-grid, .dq-list, .board-wrap, .table-scroll,
+.docket-wrap, .chart-frame {
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+
+.dq-head, .dq-row { padding-left: 18px !important; padding-right: 18px !important; }
+.ws-table th, .ws-table td, .table-scroll th, .table-scroll td, table th, table td {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.stage-row, .brand-row, .loop-step { padding-left: 18px !important; padding-right: 18px !important; }
+
+/* a card that already sits inside a padded card must not double up */
+.record .dq-list, .dashboard-card .dq-list, .rule-panel .ws-table-wrap,
+.record .ws-table-wrap, .dashboard-card .ws-table-wrap {
+  margin-left: -22px;
+  margin-right: -22px;
+  width: calc(100% + 44px);
+}
+
+.dashboard-card .chart-frame, .evidence-sheet .chart-frame, .viz-card .chart-frame {
+  margin: 0;
+  width: 100%;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.rule-panel .readout, .viz-card .readout, .evidence-sheet .readout,
+.dashboard-card .readout, .record .readout {
+  padding: 12px 14px !important;
+}
+
+.rule-panel .empty-state, .record .empty-state, .dashboard-card .empty-state {
+  padding: 16px 0 !important;
+}
+
+/* headers and captions sit inside the same gutter as the body of the card */
+.evidence-title, .card-head, .section-head, .page-section-header,
+.position-ledger, .dashboard-bar-list, .viz-legend, .chart-note,
+.legend, .kv-list, .distribution-title, .state-bar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100%;
+}
+
+.evidence-title { gap: 8px 14px; }
+.evidence-title h3 { flex: 1 1 auto; min-width: 0; }
+.evidence-title span { flex: 0 1 auto; min-width: 0; text-align: right; overflow-wrap: anywhere; }
+
+.card-head { flex-wrap: wrap; }
+.card-head > div:first-child { min-width: 0; flex: 1 1 200px; }
+
+/* svg exhibits keep a matching inset so axis labels never kiss the border */
+.chart-frame svg, .dashboard-card > svg, .rule-panel > svg, .viz-card > svg {
+  width: 100% !important;
+  height: auto !important;
+  padding: 2px 0;
+}
+
+/* the last row inside any card should not sit flush against the bottom edge */
+.position-ledger, .kv-list, .dashboard-bar-list { margin-bottom: 0 !important; }
+.position-row:last-child, .kv-row:last-child { border-bottom: 0 !important; padding-bottom: 0 !important; }
+
+@media (max-width: 900px) {
+  .evidence-sheet, .record, .inspector, .dashboard-card, .rule-panel, .viz-card,
+  .ws-gate, .cap-chart, .brief-sheet, .wave-card, .trend-card {
+    padding: 16px 16px !important;
+  }
+  .record .dq-list, .dashboard-card .dq-list {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
+  .dq-head, .dq-row { padding-left: 14px !important; padding-right: 14px !important; }
+}
+
+
+
+/* bar tones: distinct by default, and an explicit series colour always wins */
+.bar-fill { background: #6B655C; }
+.bar-fill.red { background: #A31A12; }
+.bar-fill.amber { background: #E8B34A; }
+.bar-fill.green { background: #8A6D1F; }
+.bar-fill.blue { background: #2D2A26; }
+.bar-fill.graphite { background: #BDB5A9; }
+.dashboard-bar-fill { background: #6B655C; }
+
+
+
+/* bar colours, final word. An inline per-series colour still overrides these. */
+.bar-list .bar-track .bar-fill { background: #6B655C; }
+.bar-list .bar-track .bar-fill.red { background: #A31A12; }
+.bar-list .bar-track .bar-fill.amber { background: #E8B34A; }
+.bar-list .bar-track .bar-fill.green { background: #8A6D1F; }
+.bar-list .bar-track .bar-fill.blue { background: #2D2A26; }
+.bar-list .bar-track .bar-fill.graphite { background: #BDB5A9; }
+.bar-list .bar-track .bar-fill[style*="background"] { background-image: none; }
+.dashboard-bar-list .dashboard-bar-track .dashboard-bar-fill { background-image: none; }
+
+
+
+/* ==========================================================================
+   STATE BOARD · one severity ramp within the approved palette.
+   Black and deep red at the severe end, gold at the mild end, and healthy
+   left almost blank so the eye goes straight to what needs a decision.
+   ========================================================================== */
+
+.state-cell, .board-cell {
+  border-radius: 3px !important;
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
+}
+
+.state-cell.state-BLOCKED, .board-cell.state-BLOCKED { background: #1A1A1A !important; color: #FFFFFF !important; }
+.state-cell.state-OUT, .board-cell.state-OUT { background: #8C1D18 !important; color: #FFFFFF !important; }
+.state-cell.state-RISK, .board-cell.state-RISK { background: #E0301E !important; color: #FFFFFF !important; }
+.state-cell.state-IMBAL, .board-cell.state-IMBAL { background: #D04A02 !important; color: #FFFFFF !important; }
+.state-cell.state-TERMINAL, .board-cell.state-TERMINAL { background: #9C3600 !important; color: #FFFFFF !important; }
+.state-cell.state-SLOW, .board-cell.state-SLOW { background: #EB8C00 !important; color: #1A1A1A !important; }
+.state-cell.state-BREAKOUT, .board-cell.state-BREAKOUT { background: #FFB600 !important; color: #1A1A1A !important; }
+.state-cell.state-HEALTHY, .board-cell.state-HEALTHY { background: #EFE9DF !important; color: #6B655C !important; font-weight: 600 !important; }
+
+.state-cell:hover, .board-cell:hover { outline: 2px solid #1A1A1A; outline-offset: -2px; }
+.state-cell.is-selected, .board-cell.is-selected { outline: 2px solid #1A1A1A; outline-offset: -2px; }
+
+.state-table th { background: #FFFFFF !important; color: #4F4A44 !important; }
+.state-table td { padding: 4px !important; }
+
+/* pills follow the same ramp */
+.state-pill.state-BLOCKED { border-color: #1A1A1A; color: #1A1A1A; background: #EDEAE6; }
+.state-pill.state-OUT { border-color: #8C1D18; color: #8C1D18; background: #F8EAE8; }
+.state-pill.state-RISK { border-color: #E0301E; color: #B3170A; background: #FDECEA; }
+.state-pill.state-IMBAL { border-color: #D04A02; color: #9C3600; background: #FBEFE7; }
+.state-pill.state-TERMINAL { border-color: #9C3600; color: #7A2A00; background: #F9EDE4; }
+.state-pill.state-SLOW { border-color: #EB8C00; color: #8A5200; background: #FDF3E3; }
+.state-pill.state-BREAKOUT { border-color: #C98F00; color: #7A5600; background: #FFF6DF; }
+.state-pill.state-HEALTHY { border-color: #DCD5C9; color: #6B655C; background: #F7F3EC; }
+
+/* the network mix bar and its legend inherit the same ramp */
+.state-bar { background: #EFE9DF !important; }
+.legend-dot { border: 1px solid rgba(26, 26, 26, 0.14); }
+
+
+
+/* ==========================================================================
+   STATE BOARD, take two.
+   Saturated blocks read as a wall of colour when one state dominates, which
+   is what made the grid ugly. Cells are now light, with the state carried by
+   a solid colour bar and the count set in the state's own colour.
+   ========================================================================== */
+
+.state-cell, .board-cell {
+  position: relative;
+  border: 1px solid #E4DED5 !important;
+  border-radius: 4px !important;
+  background: #FBF9F5 !important;
+  color: #4F4A44 !important;
+  font-weight: 700 !important;
+  overflow: hidden;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.state-cell::before, .board-cell::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: #E4DED5;
+}
+
+.state-cell.state-OUT, .board-cell.state-OUT { background: #FBEDEB !important; border-color: #E7C3BD !important; color: #7F1D1D !important; }
+.state-cell.state-OUT::before, .board-cell.state-OUT::before { background: #7F1D1D; }
+
+.state-cell.state-BLOCKED, .board-cell.state-BLOCKED { background: #F4EFEA !important; border-color: #D8CCC1 !important; color: #4A3B2F !important; }
+.state-cell.state-BLOCKED::before, .board-cell.state-BLOCKED::before { background: #1A1A1A; }
+
+.state-cell.state-RISK, .board-cell.state-RISK { background: #FDECEA !important; border-color: #F0C6C0 !important; color: #B3170A !important; }
+.state-cell.state-RISK::before, .board-cell.state-RISK::before { background: #E0301E; }
+
+.state-cell.state-IMBAL, .board-cell.state-IMBAL { background: #FCEFE5 !important; border-color: #EFCFB6 !important; color: #9C3600 !important; }
+.state-cell.state-IMBAL::before, .board-cell.state-IMBAL::before { background: #D04A02; }
+
+.state-cell.state-TERMINAL, .board-cell.state-TERMINAL { background: #F8EEE6 !important; border-color: #E4CDB9 !important; color: #7A2A00 !important; }
+.state-cell.state-TERMINAL::before, .board-cell.state-TERMINAL::before { background: #9C3600; }
+
+.state-cell.state-SLOW, .board-cell.state-SLOW { background: #FDF5E6 !important; border-color: #EFDCB6 !important; color: #8A5200 !important; }
+.state-cell.state-SLOW::before, .board-cell.state-SLOW::before { background: #EB8C00; }
+
+.state-cell.state-BREAKOUT, .board-cell.state-BREAKOUT { background: #FFF9E4 !important; border-color: #EEDFAE !important; color: #7A5600 !important; }
+.state-cell.state-BREAKOUT::before, .board-cell.state-BREAKOUT::before { background: #FFB600; }
+
+.state-cell.state-HEALTHY, .board-cell.state-HEALTHY {
+  background: #FFFFFF !important;
+  border-color: #EDE7DE !important;
+  color: #A9A298 !important;
+  font-weight: 600 !important;
+}
+.state-cell.state-HEALTHY::before, .board-cell.state-HEALTHY::before { background: #EDE7DE; }
+
+.state-cell:hover, .board-cell:hover {
+  background: #FFFFFF !important;
+  border-color: #1A1A1A !important;
+}
+
+.state-cell.is-selected, .board-cell.is-selected {
+  border-color: #1A1A1A !important;
+  box-shadow: inset 0 0 0 1px #1A1A1A;
+}
+
+.state-table td { padding: 3px !important; }
+.state-table th {
+  background: #FFFFFF !important;
+  color: #4F4A44 !important;
+  font-size: 10px !important;
+  letter-spacing: 0.1em;
+}
+
+
+
+/* ==========================================================================
+   STATE BOARD · single hue heat map (option D)
+   White for healthy through to near black red for stocked out. Severity is
+   carried by intensity, so a dominant state no longer floods the grid.
+   ========================================================================== */
+
+.state-cell, .board-cell {
+  position: relative;
+  border: 1px solid rgba(26, 26, 26, 0.07) !important;
+  border-radius: 3px !important;
+  font-weight: 700 !important;
+  color: #1A1A1A !important;
+  transition: box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.state-cell::before, .board-cell::before { content: none !important; }
+
+.state-cell.state-HEALTHY, .board-cell.state-HEALTHY { background: #FFFFFF !important; color: #C4BDB3 !important; font-weight: 600 !important; }
+.state-cell.state-BREAKOUT, .board-cell.state-BREAKOUT { background: #FDEFD2 !important; color: #6B5312 !important; }
+.state-cell.state-SLOW, .board-cell.state-SLOW { background: #F9D9A3 !important; color: #6B4A05 !important; }
+.state-cell.state-IMBAL, .board-cell.state-IMBAL { background: #F0B27A !important; color: #5E2C05 !important; }
+.state-cell.state-TERMINAL, .board-cell.state-TERMINAL { background: #E08B4A !important; color: #2A1403 !important; }
+.state-cell.state-RISK, .board-cell.state-RISK { background: #CF5B22 !important; color: #FFFFFF !important; }
+.state-cell.state-BLOCKED, .board-cell.state-BLOCKED { background: #A83912 !important; color: #FFFFFF !important; }
+.state-cell.state-OUT, .board-cell.state-OUT { background: #7A1E0C !important; color: #FFFFFF !important; }
+
+.state-cell:hover, .board-cell:hover { border-color: #1A1A1A !important; box-shadow: inset 0 0 0 1px #1A1A1A; }
+.state-cell.is-selected, .board-cell.is-selected { border-color: #1A1A1A !important; box-shadow: inset 0 0 0 2px #1A1A1A; }
+
+.state-table td { padding: 3px !important; }
+.state-table th { background: #FFFFFF !important; color: #4F4A44 !important; font-size: 10px !important; letter-spacing: 0.1em; }
+
+/* the legend now reads as a scale */
+.board-legend, .legend { align-items: center; }
+.board-legend .legend-item, .legend .legend-item { font-size: 11px; }
+.legend-dot { border: 1px solid rgba(26, 26, 26, 0.16) !important; border-radius: 2px !important; }
+.state-bar { background: #FFFFFF !important; border: 1px solid rgba(26, 26, 26, 0.08); }
+.state-segment { border-right: 1px solid rgba(255, 255, 255, 0.6); }
+
+
+
+/* ==========================================================================
+   DECISION ROW · every column can shrink, so Accept and Reject stay inside
+   the card at any width. The buttons stack before they overflow.
+   ========================================================================== */
+
+.dq-list, .dq-log { max-width: 100%; overflow: hidden !important; }
+
+.dq-head, .dq-row {
+  grid-template-columns:
+    26px
+    minmax(0, 104px)
+    minmax(0, 1.15fr)
+    minmax(0, 1.7fr)
+    minmax(0, 82px)
+    minmax(0, 82px)
+    minmax(96px, 132px) !important;
+  gap: 10px !important;
+  max-width: 100%;
+}
+
+.dq-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.btn-accept, .btn-reject {
+  flex: 1 1 auto;
+  min-width: 58px;
+  max-width: 100%;
+  padding: 6px 8px !important;
+  font-size: 10.5px !important;
+  text-align: center;
+}
+
+.dq-done { flex: 1 1 auto; justify-content: center; min-width: 0; }
+.dq-value, .dq-qty { min-width: 0; }
+.dq-value strong, .dq-qty strong { font-size: 11.5px; }
+
+@media (max-width: 1500px) {
+  .dq-head, .dq-row {
+    grid-template-columns:
+      24px
+      minmax(0, 98px)
+      minmax(0, 1.1fr)
+      minmax(0, 1.5fr)
+      minmax(0, 76px)
+      minmax(88px, 118px) !important;
+  }
+  .dq-head span:nth-child(6), .dq-qty { display: none; }
+  .btn-accept, .btn-reject { flex: 1 1 100%; }
+}
+
+@media (max-width: 1180px) {
+  .dq-head { display: none; }
+  .dq-row {
+    grid-template-columns: 24px minmax(0, 1fr) minmax(0, 76px) minmax(92px, 120px) !important;
+    row-gap: 9px;
+  }
+  .dq-reason { grid-column: 1 / -1; }
+}
+
+@media (max-width: 820px) {
+  .dq-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; }
+  .dq-rank { display: none; }
+  .dq-actions { grid-column: 1 / -1; justify-content: flex-start; }
+  .btn-accept, .btn-reject { flex: 0 1 auto; min-width: 80px; }
+}
+
+
+
+/* ==========================================================================
+   DECISION LOG · four columns of its own, not the seven-column queue template
+   ========================================================================== */
+
+.dq-log .dq-row {
+  grid-template-columns:
+    minmax(0, 108px)
+    minmax(0, 1.6fr)
+    minmax(0, 96px)
+    minmax(0, 1.1fr) !important;
+  gap: 14px !important;
+  align-items: center;
+  cursor: default;
+  border-left: 3px solid transparent;
+}
+
+.dq-log .dq-row:hover { background: transparent; }
+.dq-log .dq-tag { align-items: flex-start; }
+.dq-log .dq-item { min-width: 0; }
+.dq-log .dq-item strong { font-size: 13px; }
+.dq-log .dq-value strong { font-size: 12px; }
+
+.dq-log .dq-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dq-log .dq-done {
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.dq-log .dq-time { flex: 0 0 auto; }
+
+@media (max-width: 900px) {
+  .dq-log .dq-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; row-gap: 8px; }
+  .dq-log .dq-actions { grid-column: 1 / -1; justify-content: flex-start; }
+}
+
+
+
+/* pager under the decision queue */
+.dq-pager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 13px;
+  border-top: 1px solid var(--rule);
+}
+
+.dq-pager-count { font-size: 12px; color: var(--muted); }
+.dq-pager-count strong { color: var(--ink); }
+.dq-pager-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.pager-btn {
+  padding: 7px 14px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-control);
+  background: #FFFFFF;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pager-btn:hover { border-color: #1A1A1A; color: #1A1A1A; }
+.pager-btn.primary { background: #D04A02; border-color: #D04A02; color: #FFFFFF; }
+.pager-btn.primary:hover { background: #9C3600; border-color: #9C3600; color: #FFFFFF; }
 
 </style>
 </body>
