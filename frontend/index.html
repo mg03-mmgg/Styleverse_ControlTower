@@ -3052,14 +3052,14 @@ input[type="range"] {
 
 /* state colours across board, legends and charts */
 
-.state-OUT { background: #D04A02; }
-.state-BLOCKED { background: #D04A02; }
-.state-RISK { background: #D04A02; }
-.state-BREAKOUT { background: #D04A02; }
-.state-TERMINAL { background: #D04A02; }
-.state-IMBAL { background: #D04A02; }
-.state-SLOW { background: #D04A02; }
-.state-HEALTHY { background: #D04A02; }
+.state-OUT        { background:#B91C1C; }
+.state-BLOCKED    { background:#44403C; }
+.state-RISK       { background:#D04A02; }
+.state-BREAKOUT   { background:#7C3AED; }
+.state-TERMINAL   { background:#9D174D; }
+.state-IMBAL      { background:#0E7490; }
+.state-SLOW       { background:#92400E; }
+.state-HEALTHY    { background:#166534; }
 
 .bar-fill.red { background: var(--rose); }
 .bar-fill.amber { background: var(--tangerine); }
@@ -3111,14 +3111,14 @@ input[type="range"] {
 
 /* state board cells: legible text on every colour */
 
-.state-cell.state-OUT { background: #D04A02; color: #fff; }
-.state-cell.state-BLOCKED { background: #D04A02; color: #fff; }
-.state-cell.state-RISK { background: #D04A02; color: #fff; }
-.state-cell.state-BREAKOUT { background: rgba(208,74,2,.70); color: #FFFFFF; }
-.state-cell.state-TERMINAL { background: #D04A02; color: #fff; }
-.state-cell.state-IMBAL { background: #D04A02; color: #fff; }
-.state-cell.state-SLOW { background: rgba(208,74,2,.25); color: #D04A02; }
-.state-cell.state-HEALTHY { background: rgba(208,74,2,.12); color: #D04A02; }
+.state-cell.state-OUT      { background:#B91C1C; color:#fff; }
+.state-cell.state-BLOCKED  { background:#44403C; color:#fff; }
+.state-cell.state-RISK     { background:#D04A02; color:#fff; }
+.state-cell.state-BREAKOUT { background:#7C3AED; color:#FFFFFF; }
+.state-cell.state-TERMINAL { background:#9D174D; color:#fff; }
+.state-cell.state-IMBAL    { background:#0E7490; color:#fff; }
+.state-cell.state-SLOW     { background:#92400E; color:#fff; }
+.state-cell.state-HEALTHY  { background:#166534; color:#fff; }
 
 .state-cell.quiet { color: #D04A02; opacity: 1; }
 
@@ -3913,19 +3913,18 @@ tr:hover td { background:rgba(208,74,2,0.035) !important; }
 .action-mark.red, .action-mark.amber, .action-mark.violet, .action-mark.blue, .action-mark.graphite { background:#D04A02 !important; }
 .taxo-tag.automate, .taxo-tag.augment, .taxo-tag.human { background:var(--surface-tint) !important; color:var(--ink) !important; border-color:var(--rule) !important; }
 
-/* State board: all states remain distinguishable through purple intensity, never hue. */
-.state-OUT, .state-BLOCKED, .state-RISK, .state-BREAKOUT, .state-TERMINAL, .state-IMBAL, .state-SLOW, .state-HEALTHY,
-.state-cell.state-OUT, .state-cell.state-BLOCKED, .state-cell.state-RISK, .state-cell.state-BREAKOUT,
-.state-cell.state-TERMINAL, .state-cell.state-IMBAL, .state-cell.state-SLOW, .state-cell.state-HEALTHY {
-  background:#D04A02 !important; color:#FFFFFF !important;
-}
-.state-BLOCKED, .state-cell.state-BLOCKED { opacity:.92; }
-.state-RISK, .state-cell.state-RISK { opacity:.82; }
-.state-BREAKOUT, .state-cell.state-BREAKOUT { opacity:.72; }
-.state-TERMINAL, .state-cell.state-TERMINAL { opacity:.64; }
-.state-IMBAL, .state-cell.state-IMBAL { opacity:.56; }
-.state-SLOW, .state-cell.state-SLOW { opacity:.46; }
-.state-HEALTHY, .state-cell.state-HEALTHY { opacity:.32; color:var(--ink) !important; }
+/* State board: each state has its own semantic colour so the legend
+   and grid cells are immediately distinguishable at a glance.
+   Severity: red=critical, amber=warning, purple=opportunity,
+   teal=imbalance, olive=slow, green=healthy, graphite=blocked */
+.state-OUT,        .state-cell.state-OUT        { background:#B91C1C !important; color:#FFFFFF !important; } /* deep red — stockout */
+.state-BLOCKED,    .state-cell.state-BLOCKED    { background:#44403C !important; color:#FFFFFF !important; } /* dark graphite — supply blocked */
+.state-RISK,       .state-cell.state-RISK       { background:#D04A02 !important; color:#FFFFFF !important; } /* signal orange — stockout risk */
+.state-BREAKOUT,   .state-cell.state-BREAKOUT   { background:#7C3AED !important; color:#FFFFFF !important; } /* violet — demand breakout */
+.state-TERMINAL,   .state-cell.state-TERMINAL   { background:#9D174D !important; color:#FFFFFF !important; } /* rose — terminal overstock */
+.state-IMBAL,      .state-cell.state-IMBAL      { background:#0E7490 !important; color:#FFFFFF !important; } /* teal — imbalanced network */
+.state-SLOW,       .state-cell.state-SLOW       { background:#92400E !important; color:#FFFFFF !important; } /* amber-brown — slow mover */
+.state-HEALTHY,    .state-cell.state-HEALTHY    { background:#166534 !important; color:#FFFFFF !important; } /* forest green — healthy */
 
 /* Workstream-specific visuals */
 .trend-confidence-fill { background:#8A6D1F; } .trend-tag.brand { background:#FDF2E9; border-color:#D04A02; color:#9C3600; }
@@ -6994,12 +6993,10 @@ async function loadData() {
     } else {
       try {
         await buildData();
-        // fetch real demand history in parallel — non-blocking, graceful fallback
         fetch(`${API_BASE}/api/demand-history?t=${Date.now()}`, { cache: "no-store" })
           .then((r) => r.ok ? r.json() : null)
           .then((data) => { if (data && Array.isArray(data.history)) { DEMAND_HISTORY = data.history; render(); } })
           .catch(() => {});
-        // fetch real model stats and decision history — updates MODEL and DECISION_HISTORY
         fetch(`${API_BASE}/api/model-stats?t=${Date.now()}`, { cache: "no-store" })
           .then((r) => r.ok ? r.json() : null)
           .then((data) => {
@@ -7015,10 +7012,7 @@ async function loadData() {
             };
             if (Array.isArray(data.decision_history) && data.decision_history.length > 0) {
               DECISION_HISTORY = data.decision_history.map((r) => ({
-                type:     r.type,
-                raised:   r.raised,
-                accepted: r.accepted,
-                value:    r.value,
+                type: r.type, raised: r.raised, accepted: r.accepted, value: r.value,
               }));
             }
             render();
